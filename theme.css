@@ -1,0 +1,101 @@
+.sk_theme {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-feature-settings: "palt";;
+    font-size: 0.875rem;
+    background: rgb(30 41 59 / 90%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 80%);
+    border-radius: 0.5rem;
+    color: #abb2bf;
+}
+.sk_theme input {
+    font-family: monospace;
+    letter-spacing: -0.03em;
+}
+.sk_theme tbody {
+    color: #fff;
+}
+.sk_theme input {
+    color: #d0d0d0;
+}
+.sk_theme .annotation {
+    color: #56b6c2;
+}
+.sk_theme .omnibar_timestamp {
+    color: #e5c07b;
+}
+.sk_theme .omnibar_visitcount {
+    color: #98c379;
+}
+#sk_omnibar {
+    width: 50%;
+    left: 25%;
+}
+#sk_omnibar #sk_omnibarSearchArea {
+    margin: 1.5rem;
+    padding: 0.5rem;
+    background-color: hsl(217deg 19% 32% / 90%);
+    border-radius: 0.5rem;
+    border: 0;
+}
+#sk_omnibar #sk_omnibarSearchResult {
+    margin: 0 1.5rem;
+}
+#sk_omnibar #sk_omnibarSearchResult ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: hsl(215deg 25% 17% / 30%);
+}
+#sk_omnibar #sk_omnibarSearchResult .omnibar_highlight {
+    font-weight: bold;
+    color: inherit;
+    background-color: rgba(255, 255, 0, 0.2);
+}
+#sk_omnibar #sk_omnibarSearchResult ul li.focused {
+    background-image: linear-gradient(to right, hsl(239deg 84% 67% / 50%), hsl(199deg 89% 48% / 60%));
+    color: #fff;
+}
+#sk_omnibar #sk_omnibarSearchResult li .url {
+    color: rgb(56, 189, 248);
+    font-weight: normal;
+    font-family: monospace;
+    letter-spacing: -0.03em;
+    font-size: 0.75rem;
+    margin-left: 1.45rem;
+}
+#sk_status, #sk_find {
+    font-size: 1.25rem;
+}
+#sk_keystroke {
+    background: rgb(30 41 59 / 90%);
+    border-radius: 0.5rem 0 0;
+    padding: 0.5rem;
+}
+#sk_keystroke > div {
+    display: flex;
+    align-items: center;
+    margin: 0.25em 0;
+}
+#sk_keystroke kbd {
+    font-size: 1rem;
+    line-height: 1;
+}
+#sk_keystroke kbd > .candidates {
+    color: rgb(219 39 119);
+}
+#sk_keystroke .kbd-span {
+    min-width: 2.5rem;
+}
+#sk_keystroke .annotation {
+    padding-left: 0.5em;
+    color: rgb(125 211 252);
+}
+#sk_status {
+    padding: 4px 12px;
+}
+#sk_status > span {
+    line-height: 1;
+    display: inline-block;
+    border: 0 !important;
+}
