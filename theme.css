@@ -70,7 +70,8 @@
 #sk_keystroke {
     background: rgb(30 41 59 / 90%);
     border-radius: 0.5rem 0 0;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 #sk_keystroke > div {
     display: flex;
@@ -90,6 +91,10 @@
 #sk_keystroke .annotation {
     padding-left: 0.5em;
     color: rgb(125 211 252);
+}
+#sk_keystroke:not(.expandRichHints) {
+    font-size: 2rem;
+    font-family: monospace;
 }
 #sk_status {
     padding: 4px 12px;
