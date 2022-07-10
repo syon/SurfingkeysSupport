@@ -1,14 +1,39 @@
 <template>
   <v-container class="pb-16">
-    <div class="d-flex justify-center">
-      <v-radio-group v-model="radioCustom" row class="mx-4">
-        <v-radio label="old" value="old"></v-radio>
-        <v-radio label="new" value="new"></v-radio>
-      </v-radio-group>
-      <v-radio-group v-model="radioTrans" row class="mx-4">
-        <v-radio label="en" value="en"></v-radio>
-        <v-radio label="ja" value="ja"></v-radio>
-      </v-radio-group>
+    <div class="d-flex justify-space-between">
+      <div class="d-flex">
+        <div class="mt-5 mx-8" style="width: 500px">
+          <p class="v-label theme--light text-body-2">
+            Advanced mode カスタムスクリプト
+          </p>
+          <v-text-field
+            v-model="gistUrl"
+            prepend-icon="mdi-github"
+            label="Gist raw file URL"
+            hide-details
+            dense
+            outlined
+            readonly
+            append-icon="mdi-content-copy"
+            @click:append="handleGistUrlCopy"
+          />
+          <v-snackbar v-model="snackbar" top timeout="3000">
+            コピーしました。
+          </v-snackbar>
+        </div>
+      </div>
+      <div class="d-flex">
+        <v-radio-group v-model="radioCustom" class="mx-8">
+          <template #label><div>キーマップ</div></template>
+          <v-radio label="カスタム" value="new"></v-radio>
+          <v-radio label="オリジナル" value="old"></v-radio>
+        </v-radio-group>
+        <v-radio-group v-model="radioTrans" class="mx-8">
+          <template #label><div>説明</div></template>
+          <v-radio label="日本語" value="ja"></v-radio>
+          <v-radio label="English" value="en"></v-radio>
+        </v-radio-group>
+      </div>
     </div>
 
     <v-data-table :headers="headers" :items="kaymapList" :items-per-page="-1">
@@ -22,8 +47,13 @@
 <script>
 import keymap from '@/data/out/keymap.json'
 
+const gistUrl =
+  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/3601738199430cb709d9715165c3af39699d0a65/SurfingkeysConfig.js'
+
 export default {
   data: () => ({
+    gistUrl,
+    snackbar: false,
     isCustom: true,
     isTrans: true,
   }),
@@ -60,6 +90,14 @@ export default {
         { text: 'キーストローク', value: 'stroke', width: 180 },
         { text: '説明', value: 'desc' },
       ]
+    },
+  },
+
+  methods: {
+    handleGistUrlCopy() {
+      navigator.clipboard.writeText(gistUrl).then((e) => {
+        this.snackbar = true
+      })
     },
   },
 }
