@@ -26,7 +26,7 @@
         <v-radio-group v-model="radioCustom" class="mx-8">
           <template #label><div>キーマップ</div></template>
           <v-radio label="カスタム" value="new"></v-radio>
-          <v-radio label="オリジナル" value="old"></v-radio>
+          <v-radio label="デフォルト" value="old"></v-radio>
         </v-radio-group>
         <v-radio-group v-model="radioTrans" class="mx-8">
           <template #label><div>説明</div></template>
