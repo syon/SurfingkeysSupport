@@ -52,7 +52,7 @@
 import keymap from '@/data/out/keymap.json'
 
 const gistUrl =
-  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/b19050234a479445e0fa208290a19f8827b598d7/SurfingkeysConfig.js'
+  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/1bdb012d8afa58b5b62334b5a4128a408cc1a9d1/SurfingkeysConfig.js'
 
 export default {
   data: () => ({
