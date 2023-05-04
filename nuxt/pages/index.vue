@@ -38,7 +38,11 @@
 
     <v-data-table :headers="headers" :items="kaymapList" :items-per-page="-1">
       <template #item.stroke="{ item }">
-        <code class="keystroke">{{ item.stroke }}</code>
+        <code v-if="item.stroke" class="keystroke">{{ item.stroke }}</code>
+        <span v-if="item.stroke2">
+          <span style="font-size: 10px">または</span>
+          <code class="keystroke">{{ item.stroke2 }}</code>
+        </span>
       </template>
     </v-data-table>
   </v-container>
@@ -48,7 +52,7 @@
 import keymap from '@/data/out/keymap.json'
 
 const gistUrl =
-  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/3601738199430cb709d9715165c3af39699d0a65/SurfingkeysConfig.js'
+  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/b19050234a479445e0fa208290a19f8827b598d7/SurfingkeysConfig.js'
 
 export default {
   data: () => ({
@@ -80,6 +84,7 @@ export default {
         category: x.category,
         mode: x.mode,
         stroke: this.isCustom ? x['new-stroke'] : x['old-stroke'],
+        stroke2: x['new-stroke-add'],
         desc: this.isTrans ? x['desc-ja'] : x['desc-en'],
       }))
     },

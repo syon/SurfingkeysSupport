@@ -3,7 +3,7 @@ const shuntNormalKeys = (keys) => keys.forEach((key) => map(`!!${key}`, key))
 const unmapNormalKeys = (keys) => keys.forEach((key) => unmap(key))
 const unshuntNormalKeys = (keys) => keys.forEach((key) => unmap(`!!${key}`))
 // ---------------------------------------------------------
-const defaultNormalKeys = ["<Alt-s>","<Alt-i>","p","?",";ql",".","cf","gi","gf","[[","]]",";m",";fs",";di","O","f","af","C","<Ctrl-h>","<Ctrl-j>","i","I","<Ctrl-i>","q","<Ctrl-Alt-i>","0","cS","cs","e","U","d","P","gg","G","j","k","h","l","$","%",";w","w","u","yt","yT","g0","g$","gx0","gxt","gxT","gx$","gxx","E","R","T",";gt",";gw","zr","zi","zo","<Alt-p>","<Alt-m>","on","x","X","W","<<",">>","gu","gT","gt","g?","g#","gU",";u",";U","B","F","<Ctrl-6>","S","D","r","ZZ","ZR","sg","sd","sb","se","sw","ss","sh","sy","yG","yS","yv","ymv","yma","ymc","yg","ya","yc","yq","yi","ys","yj","yy","yY","yh","yl","yQ","yf","yp","yd","cq","cc",";pp",";pj",";pf","go","Q","ab","oi","om","og","od","ob","oe","ow","os","oy","ox","oh","H",":","t","b","/","zv","V","*","v","m","'","<Ctrl-'>",";pm",";e",";v","ga","gb","gc","gd","gh","gk","ge","gn","gs",";i",";j","cp",";pa",";pb",";pd",";ps",";pc",";cp",";ap","gr",";s",";ph",";t",";dh",";db",";yh","ZQ"];
+const defaultNormalKeys = ["<Alt-s>","<Alt-i>","p","?",";ql",".","cf","gi","gf","[[","]]",";m",";fs",";di","O","f","af","C","<Ctrl-h>","<Ctrl-j>","i","I","<Ctrl-i>","q","<Ctrl-Alt-i>","0","cS","cs","e","U","d","P","gg","G","j","k","h","l","$","%",";w","w","u","yt","yT","g0","g$","gx0","gxt","gxT","gx$","gxx","gxp","E","R","T",";gt",";gw","zr","zi","zo","<Alt-p>","<Alt-m>","on","x","X","W","<<",">>","gu","gT","gt","gp","g?","g#","gU",";u",";U","B","F","<Ctrl-6>","S","D","r","ZZ","ZR","sg","sd","sb","se","sw","ss","sh","sy","yG","yS","yv","ymv","yma","ymc","yg","ya","yc","yq","yi","ys","yj","yy","yY","yh","yl","yQ","yf","yp","yd","cq","cc",";pp",";pj",";pf","go","Q","ab","oi","om","og","od","ob","oe","ow","os","oy","ox","oh","H",":","t","b","<Ctrl-d>","<Ctrl-i>","<Ctrl-j>","<Ctrl-.>","<Ctrl-,>","<Ctrl-c>","<Ctrl-D>","<Ctrl-r>","<Esc>","<Ctrl-m>","<Tab>","<Shift-Tab>","<Ctrl-'>","<ArrowDown>","<ArrowUp>","<Ctrl-n>","<Ctrl-p>","/","zv","V","*","v","n","N","0","l","h","j","k","w","e","b",")","(","}","{","$","G","gg","gr","o","*","<Enter>","<Shift-Enter>","zt","zz","zb","f","F",";",",","p","V","<Ctrl-u>","<Ctrl-d>","t","q","m","'","<Ctrl-'>",";pm",";e",";v","ga","gb","gc","gd","gh","gk","ge","gn","gs",";i",";j","cp",";pa",";pb",";pd",";ps",";pc",";cp",";ap","gr",";s",";ph",";t",";dh",";db",";yh","<Ctrl-e>","<Ctrl-f>","<Ctrl-u>","<Alt-b>","<Alt-f>","<Alt-w>","<Alt-d>","<Esc>","<Ctrl-'>","<Ctrl-i>","<Ctrl-Alt-i>","ZQ"];
 shuntNormalKeys(defaultNormalKeys);
 unmapNormalKeys(defaultNormalKeys);
 
@@ -54,6 +54,7 @@ map("txl", "!!gxt")
 map("txr", "!!gxT")
 map("tx$", "!!gx$")
 map("txx", "!!gxx")
+map("txp", "!!gxp")
 map("E", "!!E")
 map("J", "!!E")
 map("R", "!!R")
@@ -72,6 +73,7 @@ map("W", "!!W")
 map("<<", "!!<<")
 map(">>", "!!>>")
 map("gu", "!!gu")
+map("tgp", "!!gp")
 map("g?", "!!g?")
 map("g#", "!!g#")
 map("gU", "!!gU")
