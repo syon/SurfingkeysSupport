@@ -4,28 +4,28 @@ Help	normal	<Alt-s>	@@		Toggle SurfingKeys on current site	現在のサイトで
 Help	normal	<Alt-i>	@pt		Enter PassThrough mode to temporarily suppress SurfingKeys	パススルーモードに移行。Escで解除。
 Help	normal	p	@1pt		Enter ephemeral PassThrough mode to temporarily suppress SurfingKeys	パススルーモードに1秒間だけ移行。
 Help	normal	?	?		Show usage	キーマップ表示
-Help	normal	;ql			Show last action	
-Help	normal	.	.		Repeat last action	
+Help	normal	;ql			Show last action	直前のアクションを表示
+Help	normal	.	.		Repeat last action	直前のアクションを繰り返す
 						
 Mouse Click	normal	cf	;F		Open multiple links in a new tab	リンクにヒントを表示し続けてバックグラウンドで複数のタブを開く
 Mouse Click	normal	gi	gi		Go to the first edit box	ページ内最初の入力要素にフォーカス
-Mouse Click	normal	gf	gf		Open a link in non-active new tab	
-Mouse Click	normal	[[	[[		Click on the previous link on current page	
-Mouse Click	normal	]]	]]		Click on the next link on current page	
-Mouse Click	normal	;m			mouse out last element	
-Mouse Click	normal	;fs	cf		Display hints to focus scrollable elements	
-Mouse Click	normal	;di	;di		Download image	
+Mouse Click	normal	gf	gf		Open a link in non-active new tab	非アクティブな新しいタブでリンクを開く
+Mouse Click	normal	[[	[[		Click on the previous link on current page	現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。
+Mouse Click	normal	]]	]]		Click on the next link on current page	現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。
+Mouse Click	normal	;m			mouse out last element	最後に操作した要素に対して mouseout イベントを実行。タブ移動を伴わない要素への操作を行ったあと、再実行するためにあると思われる。
+Mouse Click	normal	;fs	cf		Display hints to focus scrollable elements	現在表示中の領域にあるスクロール可能要素にヒントを表示してフォーカスを移す。
+Mouse Click	normal	;di	;di		Download image	現在表示中の領域にある画像要素にヒントを表示して画像ファイルをダウンロードする。
 Mouse Click	normal	O	;u		Open detected links from text	現在表示中の領域にあるURLテキストにヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。
-Mouse Click	normal	f	f		Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。ヒントを表示したあとShiftキーを押しながら選択すると、アクティブな新しいタブで開く。
-Mouse Click	normal	af			Open a link in active new tab	fをアクティブな新しいタブで開くのをデフォルトにした状態で実行。
-Mouse Click	normal	C	F		Open a link in non-active new tab	
+Mouse Click	normal	f	f		Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
+Mouse Click	normal	af			Open a link in active new tab	`f`をアクティブな新しいタブで開く状態で実行。
+Mouse Click	normal	C	F		Open a link in non-active new tab	`f`を非アクティブな新しいタブで開く状態で実行。
 Mouse Click	normal	<Ctrl-h>	;mov		Mouse over elements.	現在表示中の領域にある要素にヒントを表示して mouseover イベントを実行。
 Mouse Click	normal	<Ctrl-j>	;mou		Mouse out elements.	現在表示中の領域にある要素にヒントを表示して mouseout イベントを実行。
-Mouse Click	normal	i	i		Go to edit box	現在表示中の領域にある入力要素にヒントを表示してフォーカス。要素が1つの場合はそのままフォーカス。
-Mouse Click	normal	I			Go to edit box with vim editor	現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。
-Mouse Click	normal	<Ctrl-i>			Go to edit box with vim editor	Iと同じ
-Mouse Click	normal	q	;f		Click on an Image or a button	
-Mouse Click	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	
+Mouse Click	normal	i	i		Go to edit box	現在表示中の領域にある入力要素にヒントを表示してクリック。要素が1つの場合はそのままクリック。
+Mouse Click	normal	I			Go to edit box with vim editor	現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。ノーマルモードでEnterを押すことで内容を入力要素に反映する。
+Mouse Click	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
+Mouse Click	normal	q	;f		Click on an Image or a button	現在表示中の領域にある画像またはボタン要素にヒントを表示してクリック。要素が1つの場合はヒントなしでクリック。
+Mouse Click	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	`I`と同じ（Neovimエディタ）
 						
 Scroll Page / Element	normal	0	0		Scroll all the way to the left	左端にスクロール
 Scroll Page / Element	normal	cS	cc		Reset scroll target	スクロール対象のフォーカスをリセット

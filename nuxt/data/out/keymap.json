@@ -42,7 +42,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Show last action",
-    "desc-ja": ""
+    "desc-ja": "直前のアクションを表示"
   },
   {
     "category": "Help",
@@ -51,7 +51,7 @@
     "new-stroke": ".",
     "new-stroke-add": "",
     "desc-en": "Repeat last action",
-    "desc-ja": ""
+    "desc-ja": "直前のアクションを繰り返す"
   },
   {
     "category": "Mouse Click",
@@ -78,7 +78,7 @@
     "new-stroke": "gf",
     "new-stroke-add": "",
     "desc-en": "Open a link in non-active new tab",
-    "desc-ja": ""
+    "desc-ja": "非アクティブな新しいタブでリンクを開く"
   },
   {
     "category": "Mouse Click",
@@ -87,7 +87,7 @@
     "new-stroke": "[[",
     "new-stroke-add": "",
     "desc-en": "Click on the previous link on current page",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。"
   },
   {
     "category": "Mouse Click",
@@ -96,7 +96,7 @@
     "new-stroke": "]]",
     "new-stroke-add": "",
     "desc-en": "Click on the next link on current page",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。"
   },
   {
     "category": "Mouse Click",
@@ -105,7 +105,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "mouse out last element",
-    "desc-ja": ""
+    "desc-ja": "最後に操作した要素に対して mouseout イベントを実行。タブ移動を伴わない要素への操作を行ったあと、再実行するためにあると思われる。"
   },
   {
     "category": "Mouse Click",
@@ -114,7 +114,7 @@
     "new-stroke": "cf",
     "new-stroke-add": "",
     "desc-en": "Display hints to focus scrollable elements",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるスクロール可能要素にヒントを表示してフォーカスを移す。"
   },
   {
     "category": "Mouse Click",
@@ -123,7 +123,7 @@
     "new-stroke": ";di",
     "new-stroke-add": "",
     "desc-en": "Download image",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にある画像要素にヒントを表示して画像ファイルをダウンロードする。"
   },
   {
     "category": "Mouse Click",
@@ -141,7 +141,7 @@
     "new-stroke": "f",
     "new-stroke-add": "",
     "desc-en": "Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints",
-    "desc-ja": "現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。ヒントを表示したあとShiftキーを押しながら選択すると、アクティブな新しいタブで開く。"
+    "desc-ja": "現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。"
   },
   {
     "category": "Mouse Click",
@@ -150,7 +150,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Open a link in active new tab",
-    "desc-ja": "fをアクティブな新しいタブで開くのをデフォルトにした状態で実行。"
+    "desc-ja": "`f`をアクティブな新しいタブで開く状態で実行。"
   },
   {
     "category": "Mouse Click",
@@ -159,7 +159,7 @@
     "new-stroke": "F",
     "new-stroke-add": "",
     "desc-en": "Open a link in non-active new tab",
-    "desc-ja": ""
+    "desc-ja": "`f`を非アクティブな新しいタブで開く状態で実行。"
   },
   {
     "category": "Mouse Click",
@@ -186,7 +186,7 @@
     "new-stroke": "i",
     "new-stroke-add": "",
     "desc-en": "Go to edit box",
-    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してフォーカス。要素が1つの場合はそのままフォーカス。"
+    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してクリック。要素が1つの場合はそのままクリック。"
   },
   {
     "category": "Mouse Click",
@@ -195,7 +195,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。"
+    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。ノーマルモードでEnterを押すことで内容を入力要素に反映する。"
   },
   {
     "category": "Mouse Click",
@@ -204,7 +204,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "Iと同じ"
+    "desc-ja": "`I`と同じ"
   },
   {
     "category": "Mouse Click",
@@ -213,7 +213,7 @@
     "new-stroke": ";f",
     "new-stroke-add": "",
     "desc-en": "Click on an Image or a button",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にある画像またはボタン要素にヒントを表示してクリック。要素が1つの場合はヒントなしでクリック。"
   },
   {
     "category": "Mouse Click",
@@ -222,7 +222,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with neo vim editor",
-    "desc-ja": ""
+    "desc-ja": "`I`と同じ（Neovimエディタ）"
   },
   {
     "category": "Scroll Page / Element",
