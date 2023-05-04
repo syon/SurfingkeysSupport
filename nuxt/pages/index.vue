@@ -39,7 +39,7 @@
     <v-data-table :headers="headers" :items="kaymapList" :items-per-page="-1">
       <template #item.stroke="{ item }">
         <code v-if="item.stroke" class="keystroke">{{ item.stroke }}</code>
-        <span v-if="item.stroke2">
+        <span v-if="item.stroke2 && isCustom">
           <span style="font-size: 10px">または</span>
           <code class="keystroke">{{ item.stroke2 }}</code>
         </span>
