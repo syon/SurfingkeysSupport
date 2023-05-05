@@ -10,129 +10,129 @@ Help	normal	.	.		Repeat last action	直前のアクションを繰り返す
 Mouse Click	normal	cf	;F		Open multiple links in a new tab	リンクにヒントを表示し続けてバックグラウンドで複数のタブを開く
 Mouse Click	normal	gi	gi		Go to the first edit box	ページ内最初の入力要素にフォーカス
 Mouse Click	normal	gf	gf		Open a link in non-active new tab	非アクティブな新しいタブでリンクを開く
-Mouse Click	normal	[[	[[		Click on the previous link on current page	現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。
-Mouse Click	normal	]]	]]		Click on the next link on current page	現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。
+Mouse Click	normal	[[	[[		Click on the previous link on current page	現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合はヒント選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。
+Mouse Click	normal	]]	]]		Click on the next link on current page	現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合はヒント選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。
 Mouse Click	normal	;m			mouse out last element	最後に操作した要素に対して mouseout イベントを実行。タブ移動を伴わない要素への操作を行ったあと、再実行するためにあると思われる。
 Mouse Click	normal	;fs	cf		Display hints to focus scrollable elements	現在表示中の領域にあるスクロール可能要素にヒントを表示してフォーカスを移す。
-Mouse Click	normal	;di	;di		Download image	現在表示中の領域にある画像要素にヒントを表示して画像ファイルをダウンロードする。
-Mouse Click	normal	O	;u		Open detected links from text	現在表示中の領域にあるURLテキストにヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。
-Mouse Click	normal	f	f		Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
+Mouse Click	normal	;di	;di		Download image	現在表示中の領域にある画像をファイルとしてダウンロードする。複数ある場合はヒント選択。
+Mouse Click	normal	O	;u		Open detected links from text	現在表示中の領域にあるURLテキストを開く。複数ある場合はヒント選択。
+Mouse Click	normal	f	f		Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
 Mouse Click	normal	af			Open a link in active new tab	`f`をアクティブな新しいタブで開く状態で実行。
 Mouse Click	normal	C	F		Open a link in non-active new tab	`f`を非アクティブな新しいタブで開く状態で実行。
-Mouse Click	normal	<Ctrl-h>	;mov		Mouse over elements.	現在表示中の領域にある要素にヒントを表示して mouseover イベントを実行。
-Mouse Click	normal	<Ctrl-j>	;mou		Mouse out elements.	現在表示中の領域にある要素にヒントを表示して mouseout イベントを実行。
-Mouse Click	normal	i	i		Go to edit box	現在表示中の領域にある入力要素にヒントを表示してクリック。要素が1つの場合はそのままクリック。
-Mouse Click	normal	I			Go to edit box with vim editor	現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。ノーマルモードでEnterを押すことで内容を入力要素に反映する。
+Mouse Click	normal	<Ctrl-h>	;mov		Mouse over elements.	現在表示中の領域にある要素に対して mouseover イベントを実行。複数ある場合はヒント選択。
+Mouse Click	normal	<Ctrl-j>	;mou		Mouse out elements.	現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。
+Mouse Click	normal	i	i		Go to edit box	現在表示中の領域にある入力要素をクリック。複数ある場合はヒント選択。
+Mouse Click	normal	I			Go to edit box with vim editor	現在表示中の領域にある入力要素に対応するVimエディタを開く。複数ある場合はヒント選択。ノーマルモードでEnterを押すことで内容を入力要素に反映する。
 Mouse Click	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
-Mouse Click	normal	q	;f		Click on an Image or a button	現在表示中の領域にある画像またはボタン要素にヒントを表示してクリック。要素が1つの場合はヒントなしでクリック。
+Mouse Click	normal	q	;f		Click on an Image or a button	現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。
 Mouse Click	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	`I`と同じ（Neovimエディタ）
 						
-Scroll Page / Element	normal	0	0		Scroll all the way to the left	左端にスクロール
+Scroll Page / Element	normal	0	0		Scroll all the way to the left	ページ左端にスクロール
 Scroll Page / Element	normal	cS	cc		Reset scroll target	スクロール対象のフォーカスをリセット
 Scroll Page / Element	normal	cs	c;		Change scroll target	ページ内のスクロール対象を順に切り替えてフォーカスを移す。
-Scroll Page / Element	normal	e	e		Scroll half page up	
-Scroll Page / Element	normal	U	U		Scroll full page up	
-Scroll Page / Element	normal	d	d		Scroll half page down	
-Scroll Page / Element	normal	P	P		Scroll full page down	
-Scroll Page / Element	normal	gg	gg		Scroll to the top of the page	
-Scroll Page / Element	normal	G	G		Scroll to the bottom of the page	
-Scroll Page / Element	normal	j	j	s	Scroll down	
-Scroll Page / Element	normal	k	k	w	Scroll up	
-Scroll Page / Element	normal	h	h		Scroll left	
-Scroll Page / Element	normal	l	l		Scroll right	
-Scroll Page / Element	normal	$	$		Scroll all the way to the right	右端にスクロール
-Scroll Page / Element	normal	%	%		Scroll to percentage of current page	
+Scroll Page / Element	normal	e	e		Scroll half page up	半ページ分上にスクロール
+Scroll Page / Element	normal	U	U		Scroll full page up	１ページ分上にスクロール
+Scroll Page / Element	normal	d	d		Scroll half page down	半ページ分下にスクロール
+Scroll Page / Element	normal	P	P		Scroll full page down	１ページ分下にスクロール
+Scroll Page / Element	normal	gg	gg		Scroll to the top of the page	ページ上端にスクロール
+Scroll Page / Element	normal	G	G		Scroll to the bottom of the page	ページ下端にスクロール
+Scroll Page / Element	normal	j	j	s	Scroll down	少し下にスクロール。移動幅は settings.scrollStepSize で指定。
+Scroll Page / Element	normal	k	k	w	Scroll up	少し上にスクロール。移動幅は settings.scrollStepSize で指定。
+Scroll Page / Element	normal	h	h		Scroll left	少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
+Scroll Page / Element	normal	l	l		Scroll right	少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
+Scroll Page / Element	normal	$	$		Scroll all the way to the right	ページ右端にスクロール
+Scroll Page / Element	normal	%	%		Scroll to percentage of current page	数値を入力してから押すことで、指定されたパーセンテージの位置にスクロール
 Scroll Page / Element	normal	;w			Focus top window	
 Scroll Page / Element	normal	w	cw;		Switch frames	操作対象のフレームを順に切り替えてフォーカスを移す。
-Scroll Page / Element	normal	u	u		Scroll half page up	
+Scroll Page / Element	normal	u	u		Scroll half page up	半ページ分上にスクロール
 						
-Tabs	normal	yt	ty		Duplicate current tab	
-Tabs	normal	yT	tY		Duplicate current tab in background	
-Tabs	normal	g0	t0		Go to the first tab	
-Tabs	normal	g$	t$		Go to the last tab	
-Tabs	normal	gx0	tx0		Close all tabs on left	
-Tabs	normal	gxt	txl		Close tab on left	
-Tabs	normal	gxT	txr		Close tab on right	
-Tabs	normal	gx$	tx$		Close all tabs on right	
-Tabs	normal	gxx	txx		Close all tabs except current one	
+Tabs	normal	yt	ty		Duplicate current tab	現在のタブを複製してアクティブにする
+Tabs	normal	yT	tY		Duplicate current tab in background	現在のタブを非アクティブで複製する
+Tabs	normal	g0	t0		Go to the first tab	最初のタブに行く
+Tabs	normal	g$	t$		Go to the last tab	最後のタブに行く
+Tabs	normal	gx0	tx0		Close all tabs on left	左にあるタブをすべて閉じる
+Tabs	normal	gxt	txl		Close tab on left	左のタブを閉じる
+Tabs	normal	gxT	txr		Close tab on right	右のタブを閉じる
+Tabs	normal	gx$	tx$		Close all tabs on right	右にあるタブをすべて閉じる
+Tabs	normal	gxx	txx		Close all tabs except current one	現在のタブ以外をすべて閉じる
 Tabs	normal	gxp	txp		Close playing tab	音声再生中のタブを閉じる。複数ある場合は、最も左にあるものが対象。
-Tabs	normal	E	E	J	Go one tab left	
-Tabs	normal	R	R	K	Go one tab right	
-Tabs	normal	T			Choose a tab	
+Tabs	normal	E	E	J	Go one tab left	左のタブに行く
+Tabs	normal	R	R	K	Go one tab right	右のタブに行く
+Tabs	normal	T			Choose a tab	オムニバーを表示し、現在開いているタブを候補として選択したタブに移動する。
 Tabs	normal	;gt	tgt		Gather filtered tabs into current window	オムニバーを表示し、別ウィンドウのChromeで開いているタブを候補とし、文字列で対象を絞り込んで列挙されているものすべてを現在のウィンドウに集める。
 Tabs	normal	;gw	tgw		Gather all tabs into current window	別ウィンドウのChromeで開いているタブすべてを現在のウィンドウに集める。
-Tabs	normal	zr	zr		zoom reset	
-Tabs	normal	zi	zi		zoom in	
-Tabs	normal	zo	zo		zoom out	
-Tabs	normal	<Alt-p>	tp		pin/unpin current tab	
-Tabs	normal	<Alt-m>	tm		mute/unmute current tab	
-Tabs	normal	on	tn		Open newtab	
-Tabs	normal	x	x		Close current tab	
-Tabs	normal	X	X		Restore closed tab	
-Tabs	normal	W	W		Move current tab to another window	
-Tabs	normal	<<	<<		Move current tab to left	
-Tabs	normal	>>	>>		Move current tab to right	
+Tabs	normal	zr	zr		zoom reset	ズーム状態をリセットして100%に戻す。
+Tabs	normal	zi	zi		zoom in	ズームイン
+Tabs	normal	zo	zo		zoom out	ズームアウト
+Tabs	normal	<Alt-p>	tp		pin/unpin current tab	現在のタブをピン留め・解除
+Tabs	normal	<Alt-m>	tm		mute/unmute current tab	現在のタブをミュート・解除
+Tabs	normal	on	tn		Open newtab	新しいタブを開いてアクティブにする
+Tabs	normal	x	x		Close current tab	現在のタブを閉じる
+Tabs	normal	X	X		Restore closed tab	閉じたタブを復元する
+Tabs	normal	W	W		Move current tab to another window	現在のタブを新規ウィンドウに移動する
+Tabs	normal	<<	<<		Move current tab to left	現在のタブを左に移動する
+Tabs	normal	>>	>>		Move current tab to right	現在のタブを右に移動する
 						
-Page Navigation	normal	gu	gu		Go up one path in the URL	
+Page Navigation	normal	gu	gu		Go up one path in the URL	URLの1つ上のディレクトリにアクセスする
 Page Navigation	normal	gT			Go to first activated tab	
 Page Navigation	normal	gt			Go to last activated tab	
-Page Navigation	normal	gp	tgp		Go to the playing tab	音声再生中のタブをアクティブにする。複数ある場合は、最後にアクティブにしたものが対象。
-Page Navigation	normal	g?	g?		Reload current page without query string(all parts after question mark)	
-Page Navigation	normal	g#	g#		Reload current page without hash fragment	
-Page Navigation	normal	gU	gU		Go to root of current URL hierarchy	
-Page Navigation	normal	;u			Edit current URL with vim editor, and open in new tab	
-Page Navigation	normal	;U			Edit current URL with vim editor, and reload	
-Page Navigation	normal	B			Go one tab history back	
-Page Navigation	normal	F			Go one tab history forward	
-Page Navigation	normal	<Ctrl-6>	t;		Go to last used tab	
-Page Navigation	normal	S	S	H	Go back in history	
-Page Navigation	normal	D	D	L	Go forward in history	
-Page Navigation	normal	r	r		Reload the page	
+Page Navigation	normal	gp	tgp		Go to the playing tab	音声再生中のタブをアクティブにする。複数ある場合は最後にアクティブにしたものが対象。
+Page Navigation	normal	g?	g?		Reload current page without query string(all parts after question mark)	URLのクエリストリングを除去してリロード
+Page Navigation	normal	g#	g#		Reload current page without hash fragment	URLのハッシュフラグメントを除去してリロード
+Page Navigation	normal	gU	gU		Go to root of current URL hierarchy	URLのドメイン直下にアクセスする
+Page Navigation	normal	;u			Edit current URL with vim editor, and open in new tab	URLをVimエディタで開いて編集し、新しいタブで開く
+Page Navigation	normal	;U			Edit current URL with vim editor, and reload	URLをVimエディタで開いて編集し、現在のタブで開く
+Page Navigation	normal	B			Go one tab history back	タブのアクティブ履歴を1つ戻す
+Page Navigation	normal	F			Go one tab history forward	タブのアクティブ履歴を1つ進む
+Page Navigation	normal	<Ctrl-6>	t;		Go to last used tab	直前に使っていたタブに行く
+Page Navigation	normal	S	S	H	Go back in history	戻る
+Page Navigation	normal	D	D	L	Go forward in history	進む
+Page Navigation	normal	r	r		Reload the page	リロード
 						
-Sessions	normal	ZZ			Save session and quit	セッション(*)を LAST という名前で保存しChromeを終了する。
+Sessions	normal	ZZ			Save session and quit	セッションを LAST という名前で保存しChromeを終了する。
 Sessions	normal	ZR			Restore last session	セッション LAST を復元する。
 						
-Search selected with	normal	sg			Search selected with google	
-Search selected with	normal	sd			Search selected with duckduckgo	
-Search selected with	normal	sb			Search selected with baidu	
-Search selected with	normal	se			Search selected with wikipedia	
-Search selected with	normal	sw			Search selected with bing	
-Search selected with	normal	ss			Search selected with stackoverflow	
-Search selected with	normal	sh			Search selected with github	
-Search selected with	normal	sy			Search selected with youtube	
+Search selected with	normal	sg			Search selected with google	Googleにて選択テキストで検索したページを新規タブで開く。選択テキストとはページ内の選択テキスト、Visualモードでの選択テキスト、クリップボード。
+Search selected with	normal	sd			Search selected with duckduckgo	DuckDuckGoにて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	sb			Search selected with baidu	Baiduにて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	se			Search selected with wikipedia	Wikipedia(英語版)にて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	sw			Search selected with bing	Bingにて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	ss			Search selected with stackoverflow	StackOverflowにて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	sh			Search selected with github	GitHubにて選択テキストで検索したページを新規タブで開く。
+Search selected with	normal	sy			Search selected with youtube	YouTubeにて選択テキストで検索したページを新規タブで開く。
 						
-Clipboard	normal	yG			Capture current full page	
-Clipboard	normal	yS			Capture scrolling element	
+Clipboard	normal	yG			Capture current full page	現在のページ全体をキャプチャ
+Clipboard	normal	yS			Capture scrolling element	現在スクロール中の要素をキャプチャ
 Clipboard	normal	yv	yv		Yank text of an element	現在表示中の領域にあるテキストにヒントを表示し、指定したものをクリップボードにコピー
-Clipboard	normal	ymv	ymv		Yank text of multiple elements	
-Clipboard	normal	yma	yma		Copy multiple link URLs to the clipboard	
-Clipboard	normal	ymc	ymc		Copy multiple columns of a table	
-Clipboard	normal	yg	yg		Capture current page	現在表示中の領域をキャプチャ
-Clipboard	normal	ya	ya		Copy a link URL to the clipboard	
-Clipboard	normal	yc	yc		Copy a column of a table	
-Clipboard	normal	yq	yq		Copy pre text	
-Clipboard	normal	yi			Yank text of an input	
-Clipboard	normal	ys			Copy current page's source	
-Clipboard	normal	yj	y@e		Copy current settings	
-Clipboard	normal	yy	yy		Copy current page's URL	
-Clipboard	normal	yY	yY		Copy all tabs's url	
-Clipboard	normal	yh	yh		Copy current page's host	
-Clipboard	normal	yl	yl		Copy current page's title	
-Clipboard	normal	yQ			Copy all query history of OmniQuery.	
+Clipboard	normal	ymv	ymv		Yank text of multiple elements	現在表示中の領域にあるテキストにヒントを表示し、指定したものをクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードに改行区切りで保管される。
+Clipboard	normal	yma	yma		Copy multiple link URLs to the clipboard	現在表示中の領域にあるURLを持つ要素にヒントを表示し、指定したものをクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードに改行区切りで保管される。
+Clipboard	normal	ymc	ymc		Copy multiple columns of a table	現在表示中の領域にあるテーブル要素の列にヒントを表示し、指定したものを改行区切りでクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードにタブ区切りで保管されるため、見た目通りの並びとなり、Excelにそのまま貼り付けられる。
+Clipboard	normal	yg	yg		Capture current page	現在表示中の領域をキャプチャ。結果は現在のページにポップアップで表示される。Base64のPNG形式。
+Clipboard	normal	ya	ya		Copy a link URL to the clipboard	現在表示中の領域にあるURLを持つ要素をクリップボードにコピーする。複数ある場合はヒント選択。
+Clipboard	normal	yc	yc		Copy a column of a table	現在表示中の領域にあるテーブル要素の列にヒントを表示し、指定したものを改行区切りでクリップボードにコピー。
+Clipboard	normal	yq	yq		Copy pre text	現在表示中の領域にあるpre要素をクリップボードにコピー。複数ある場合はヒント選択。
+Clipboard	normal	yi			Yank text of an input	現在表示中の領域にある入力要素(value属性値)をクリップボードにコピー。複数ある場合はヒント選択。
+Clipboard	normal	ys			Copy current page's source	現在のページのソースコードをクリップボードにコピー
+Clipboard	normal	yj	y@e		Copy current settings	Surfingkeysで保持している現在の利用状況データをクリップボードにコピーする
+Clipboard	normal	yy	yy		Copy current page's URL	現在のページのURLをクリップボードにコピー
+Clipboard	normal	yY	yY		Copy all tabs's url	現在開いているすべてのタブのURLをクリップボードにコピー
+Clipboard	normal	yh	yh		Copy current page's host	現在のページのホスト名をクリップボードにコピー
+Clipboard	normal	yl	yl		Copy current page's title	現在のページのタイトルをクリップボードにコピー
+Clipboard	normal	yQ			Copy all query history of OmniQuery.	単語翻訳機能 `Q`（オムニクエリ、インラインクエリ）の履歴をクリップボードにコピー
 Clipboard	normal	yf	yf		Copy form data in JSON on current page	ページ内の入力フォームすべてについて、JSON形式で入力内容をコピーします。
 Clipboard	normal	yp			Copy form data for POST on current page	ページ内の入力フォームすべてについて、コンテンツタイプ application/x-www-form-urlencoded の形式で入力内容をコピーします。
-Clipboard	normal	yd	yd		Copy current downloading URL	
-Clipboard	normal	cq	;q		Query word with Hints	
-Clipboard	normal	cc			Open selected link or link from clipboard	
+Clipboard	normal	yd	yd		Copy current downloading URL	ダウンロード中のURLをクリップボードにコピー
+Clipboard	normal	cq	;q		Query word with Hints	現在表示中の領域にある単語にヒントを表示して単語翻訳機能にかける
+Clipboard	normal	cc			Open selected link or link from clipboard	選択したテキストまたはクリップボードのテキストをURLとして新規タブで開く
 Clipboard	normal	;pp			Paste html on current page	クリップボードのテキストを現在のページのHTMLソースとして反映する
-Clipboard	normal	;pj	@re		Restore settings data from clipboard	
+Clipboard	normal	;pj	@re		Restore settings data from clipboard	Surfingkeysで保持している現在の利用状況データをクリップボードから復元する
 Clipboard	normal	;pf	;pf		Fill form with data from yf	入力フォームをヒントから選択し、クリップボードのデータ（yfコマンドでコピーした形式）を反映する。
 						
 Omnibar	normal	go	go		Open a URL in current tab	オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して現在のタブで開いて移動する。選択せず文字列を入れて決定した場合は現在のタブでGoogle検索。
-Omnibar	normal	Q	Q		Open omnibar for word translation	
-Omnibar	normal	ab	ab		Bookmark current page to selected folder	オムニバーを表示し、ブックマークフォルダを候補に表示し、選択したフォルダに現在のページを追加する
+Omnibar	normal	Q	Q		Open omnibar for word translation	オムニバーを表示し、単語翻訳機能（オムニクエリ、インラインクエリ）を実行
+Omnibar	normal	ab	ab		Bookmark current page to selected folder	オムニバーを表示し、ブックマークフォルダを候補として選択したフォルダに現在のページを追加する
 Omnibar	normal	oi	gp		Open incognito window	現在のページを新しいシークレットウィンドウで開く
-Omnibar	normal	om	om		Open URL from vim-like marks	
+Omnibar	normal	om	om		Open URL from vim-like marks	オムニバーを表示し、マークを候補としてアクティブな新しいタブで開く
 Omnibar	normal	og	og		Open Search with alias g	オムニバーを表示し、エイリアス g (google) で検索を開始
 Omnibar	normal	od			Open Search with alias d	オムニバーを表示し、エイリアス d (duckduckgo) で検索を開始
 Omnibar	normal	ob			Open Search with alias b	オムニバーを表示し、エイリアス b (baidu) で検索を開始
@@ -140,74 +140,74 @@ Omnibar	normal	oe			Open Search with alias e	オムニバーを表示し、エ�
 Omnibar	normal	ow	ow		Open Search with alias w	オムニバーを表示し、エイリアス w (bing) で検索を開始
 Omnibar	normal	os	os		Open Search with alias s	オムニバーを表示し、エイリアス s (stackoverflow) で検索を開始
 Omnibar	normal	oy	oy		Open Search with alias y	オムニバーを表示し、エイリアス y (youtube) で検索を開始
-Omnibar	normal	ox	ox		Open recently closed URL	
-Omnibar	normal	oh	oh		Open URL from history	訪問回数ランキングの履歴リスト
-Omnibar	normal	H	oH		Open opened URL in current tab	現在のタブの中で遷移してきた履歴のリスト
-Omnibar	normal	:	:		Open commands	
+Omnibar	normal	ox	ox		Open recently closed URL	オムニバーを表示し、最近閉じたタブの中から選択してアクティブな新規タブで開く
+Omnibar	normal	oh	oh		Open URL from history	オムニバーを表示し、訪問回数ランキングの履歴リストの中から選択してアクティブな新規タブで開く
+Omnibar	normal	H	oH		Open opened URL in current tab	オムニバーを表示し、現在のタブの中で遷移してきた履歴のリストの中から選択してアクティブな新規タブで開く
+Omnibar	normal	:	:		Open commands	オムニバーを表示し、コマンドを実行する
 Omnibar	normal	t	a		Open a URL	オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して新規タブで開いて移動する。選択せず文字列を入れて決定した場合は新規タブでGoogle検索。
-Omnibar	normal	b	b		Open a bookmark	オムニバーを表示し、ブックマークの中から選択して新規タブで開いて移動する。
-Omnibar	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	
-Omnibar	normal	<Ctrl-i>			Go to edit box with vim editor	Iと同じ
-Omnibar	normal	<Ctrl-j>			Mouse out elements.	現在表示中の領域にある要素にヒントを表示して mouseout イベントを実行。
-Omnibar	omnibar	<Ctrl-.>			Show results of next page	
-Omnibar	omnibar	<Ctrl-,>			Show results of previous page	
-Omnibar	omnibar	<Ctrl-c>			Copy selected item url or all listed item urls	
-Omnibar	omnibar	<Ctrl-D>			Delete all listed items from bookmark or history	
-Omnibar	omnibar	<Ctrl-r>			Re-sort history by visitCount or lastVisitTime	
-Omnibar	omnibar	<Esc>			Close Omnibar	
-Omnibar	omnibar	<Ctrl-m>			Create vim-like mark for selected item	
-Omnibar	omnibar	<Tab>			Forward cycle through the candidates.	
-Omnibar	omnibar	<Shift-Tab>			Backward cycle through the candidates.	
-Omnibar	omnibar	<Ctrl-'>			Toggle quotes in an input element	
-Omnibar	omnibar	<ArrowDown>			Forward cycle through the candidates.	
-Omnibar	omnibar	<ArrowUp>			Backward cycle through the candidates.	
-Omnibar	omnibar	<Ctrl-n>			Forward cycle through the candidates.	
-Omnibar	omnibar	<Ctrl-p>			Backward cycle through the candidates.	
+Omnibar	normal	b	b		Open a bookmark	オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く
+Omnibar	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する
+Omnibar	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
+Omnibar	normal	<Ctrl-j>			Mouse out elements.	現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。
+Omnibar	omnibar	<Ctrl-.>			Show results of next page	オムニバーの結果リストを次のページに切り替える
+Omnibar	omnibar	<Ctrl-,>			Show results of previous page	オムニバーの結果リストを前のページに切り替える
+Omnibar	omnibar	<Ctrl-c>			Copy selected item url or all listed item urls	オムニバーで選択中の項目のURLをクリップボードにコピーする。選択なしの場合は結果リストのURLをすべてコピーする。
+Omnibar	omnibar	<Ctrl-D>			Delete all listed items from bookmark or history	オムニバーで表示しているブックマークまたは履歴をすべて削除する
+Omnibar	omnibar	<Ctrl-r>			Re-sort history by visitCount or lastVisitTime	オムニバーで履歴を表示するとき、並び順を訪問回数もしくは最終訪問日時で切り替える
+Omnibar	omnibar	<Esc>			Close Omnibar	オムニバーを閉じる
+Omnibar	omnibar	<Ctrl-m>			Create vim-like mark for selected item	オムニバーで選択中の項目をマークする
+Omnibar	omnibar	<Tab>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<Shift-Tab>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
+Omnibar	omnibar	<Ctrl-'>			Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
+Omnibar	omnibar	<ArrowDown>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<ArrowUp>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
+Omnibar	omnibar	<Ctrl-n>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<Ctrl-p>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
 						
-Visual Mode	normal	/	/		Find in current page	
+Visual Mode	normal	/	/		Find in current page	画面右下に検索窓を表示してページ内検索を開始
 Visual Mode	normal	zv	zv		Enter visual mode, and select whole element	テキスト要素にヒントを表示し、選択後にVisualモードに入り対象の要素全体を選択状態にする
 Visual Mode	normal	V	V		Restore visual mode	ページ内でVisualモードを利用していた場合、状態を復元する
 Visual Mode	normal	*	*		Find selected text in current page	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caretモードの場合、カーソル下にある単語をハイライトする。Visual - Rangeモードの場合、選択文字列をハイライトする。ただし、日本語の文章内ではうまく動作しない。ハイライトした単語は表示領域内最初のものにフォーカスがあるため、nキーの挙動に注意。
 Visual Mode	normal	v	v		Toggle visual mode	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caret モードの場合、Visual - Rangeモードに入る。Escキーで直前のモードに戻る。
-Visual Mode	normal	n			Next found text	
-Visual Mode	normal	N			Previous found text	
-Visual Mode	normal	0			Scroll all the way to the left	左端にスクロール
-Visual Mode	normal	l			Scroll right	
-Visual Mode	normal	h			Scroll left	
-Visual Mode	normal	j			Scroll down	
-Visual Mode	normal	k			Scroll up	
+Visual Mode	normal	n			Next found text	次の候補に移動
+Visual Mode	normal	N			Previous found text	前の候補に移動
+Visual Mode	normal	0			Scroll all the way to the left	ページ左端にスクロール
+Visual Mode	normal	l			Scroll right	少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
+Visual Mode	normal	h			Scroll left	少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
+Visual Mode	normal	j			Scroll down	少し下にスクロール。移動幅は settings.scrollStepSize で指定。
+Visual Mode	normal	k			Scroll up	少し上にスクロール。移動幅は settings.scrollStepSize で指定。
 Visual Mode	normal	w			Switch frames	操作対象のフレームを順に切り替えてフォーカスを移す。
-Visual Mode	normal	e			Scroll half page up	
-Visual Mode	normal	b			Open a bookmark	オムニバーを表示し、ブックマークの中から選択して新規タブで開いて移動する。
+Visual Mode	normal	e			Scroll half page up	半ページ分上にスクロール
+Visual Mode	normal	b			Open a bookmark	オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く
 Visual Mode	visual	)			forward sentence	次の文にカーソルを移動
 Visual Mode	visual	(			backward sentence	前の文にカーソルを移動
 Visual Mode	visual	}			forward paragraphboundary	次の段落境界にカーソルを移動
 Visual Mode	visual	{			backward paragraphboundary	前の段落境界にカーソルを移動
-Visual Mode	normal	$			Scroll all the way to the right	右端にスクロール
-Visual Mode	normal	G			Scroll to the bottom of the page	
-Visual Mode	normal	gg			Scroll to the top of the page	
-Visual Mode	visual	gr			Read selected text	
-Visual Mode	visual	o			Go to Other end of highlighted text	
+Visual Mode	normal	$			Scroll all the way to the right	ページ右端にスクロール
+Visual Mode	normal	G			Scroll to the bottom of the page	ページ下端にスクロール
+Visual Mode	normal	gg			Scroll to the top of the page	ページ上端にスクロール
+Visual Mode	visual	gr			Read selected text	選択テキストを読み上げ開始
+Visual Mode	visual	o			Go to Other end of highlighted text	選択範囲のカーソル位置を、始端もしくは終端で切り替える
 Visual Mode	normal	*			Find selected text in current page	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caretモードの場合、カーソル下にある単語をハイライトする。Visual - Rangeモードの場合、選択文字列をハイライトする。ただし、日本語の文章内ではうまく動作しない。ハイライトした単語は表示領域内最初のものにフォーカスがあるため、nキーの挙動に注意。
 Visual Mode	visual	<Enter>			Click on node under cursor.	カーソルのある要素をクリック
 Visual Mode	visual	<Shift-Enter>			Click on node under cursor.	カーソルのある要素をクリック（リンクの場合、新規タブで開く）
 Visual Mode	visual	zt			make cursor at start of window.	カーソルが画面上端になるようにスクロール
 Visual Mode	visual	zz			make cursor at center of window.	カーソルが画面中央になるようにスクロール
 Visual Mode	visual	zb			make cursor at bottom of window.	カーソルが画面下端になるようにスクロール
-Visual Mode	normal	f			Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。ヒントを表示したあとShiftキーを押しながら選択すると、アクティブな新しいタブで開く。
-Visual Mode	normal	F			Go one tab history forward	
+Visual Mode	normal	f			Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
+Visual Mode	normal	F			Go one tab history forward	タブのアクティブ履歴を1つ進む
 Visual Mode	visual	;			Repeat latest f, F	直前の f または F をコマンドの方向に繰り返す
 Visual Mode	visual	,			Repeat latest f, F in opposite direction	直前の f または F をコマンドの逆方向に繰り返す
 Visual Mode	normal	p			Enter ephemeral PassThrough mode to temporarily suppress SurfingKeys	パススルーモードに1秒間だけ移行。
 Visual Mode	normal	V			Restore visual mode	ページ内でVisualモードを利用していた場合、状態を復元する
 Visual Mode	visual	<Ctrl-u>			Backward 20 lines	逆方向20行先にカーソルを移動
-Visual Mode	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	
+Visual Mode	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する
 Visual Mode	normal	t			Open a URL	オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して新規タブで開いて移動する。選択せず文字列を入れて決定した場合は新規タブでGoogle検索。
-Visual Mode	normal	q			Click on an Image or a button	
+Visual Mode	normal	q			Click on an Image or a button	現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。
 						
 vim-like marks	normal	m	@mk		Add current URL to vim-like marks	1文字入力待ち状態になり、次に入力した文字でマークを現在のページとスクロール状態に付与する。記憶したマークの一覧は om コマンドで確認できる。
 vim-like marks	normal	'	m		Jump to vim-like mark	1文字入力待ち状態になり、次に入力した文字で記憶したマークを新しいタブで開く。
-vim-like marks	omnibar	<Ctrl-'>	M		Toggle quotes in an input element	
+vim-like marks	omnibar	<Ctrl-'>	M		Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
 						
 Settings	normal	;pm	@md		Preview markdown	Markdownプレビュータブを開き、クリップボードの文字列をMarkdownとして表示する。
 Settings	normal	;e	@e		Edit Settings	Surfingkeysの設定を開く
@@ -234,7 +234,7 @@ Proxy	normal	;pc			set proxy mode `clear`	プロキシモード clear
 Proxy	normal	;cp			Copy proxy info	プロキシ設定情報をクリップボードにコピーする
 Proxy	normal	;ap			Apply proxy info from clipboard	プロキシ設定情報をクリップボードから反映する
 						
-Misc	visual	gr	@R		Read selected text	
+Misc	visual	gr	@R		Read selected text	選択テキストを読み上げ開始
 Misc	normal	;s	@pdf		Toggle PDF viewer from SurfingKeys	PDFビューアの有効無効を切り替える。通常、Chromeで開いたPDFファイルは専用のビューアが利用され、Surfingkeysが動作しない。
 Misc	normal	;ph	@ph		Put histories from clipboard	クリップボードからURLを履歴に追加する（改行区切りで複数可）
 Misc	normal	;t	@t		Translate selected text with google	選択したテキストをGoogle翻訳で開く
@@ -242,16 +242,16 @@ Misc	normal	;dh			Delete history older than 30 days	30日以上前の履歴を�
 Misc	normal	;db			Remove bookmark for current page	現在のページをブックマークから削除する
 Misc	normal	;yh	@yh		Yank histories	履歴をクリップボードにコピーする（最大100件）
 						
-Insert Mode	insert	<Ctrl-e>			Move the cursor to the end of the line	
-Insert Mode	insert	<Ctrl-f>			Move the cursor to the beginning of the line	
+Insert Mode	insert	<Ctrl-e>			Move the cursor to the end of the line	カーソルを行末に移動
+Insert Mode	insert	<Ctrl-f>			Move the cursor to the beginning of the line	カーソルを文頭に移動
 Insert Mode	visual	<Ctrl-u>			Backward 20 lines	逆方向20行先にカーソルを移動
-Insert Mode	insert	<Alt-b>			Move the cursor Backward 1 word	
-Insert Mode	insert	<Alt-f>			Move the cursor Forward 1 word	
-Insert Mode	insert	<Alt-w>			Delete a word backwards	
-Insert Mode	insert	<Alt-d>			Delete a word forwards	
-Insert Mode	omnibar	<Esc>			Close Omnibar	
-Insert Mode	omnibar	<Ctrl-'>			Toggle quotes in an input element	
-Insert Mode	normal	<Ctrl-i>			Go to edit box with vim editor	Iと同じ
-Insert Mode	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	
+Insert Mode	insert	<Alt-b>			Move the cursor Backward 1 word	カーソルを1単語前に移動
+Insert Mode	insert	<Alt-f>			Move the cursor Forward 1 word	カーソルを1単語次に移動
+Insert Mode	insert	<Alt-w>			Delete a word backwards	前の単語を削除
+Insert Mode	insert	<Alt-d>			Delete a word forwards	次の単語を削除
+Insert Mode	omnibar	<Esc>			Close Omnibar	オムニバーを閉じる
+Insert Mode	omnibar	<Ctrl-'>			Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
+Insert Mode	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
+Insert Mode	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	`I`と同じ（Neovimエディタ）
 						
-Secret		ZQ				
+Secret	normal	ZQ				:quit コマンドを実行してChromeを終了する

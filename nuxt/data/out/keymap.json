@@ -87,7 +87,7 @@
     "new-stroke": "[[",
     "new-stroke-add": "",
     "desc-en": "Click on the previous link on current page",
-    "desc-ja": "現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。"
+    "desc-ja": "現在表示中の領域にあるクリック要素のうち prev や << が含まれるもの、もしくは属性 [rel=prev] のあるものをクリックする（複数ある場合はヒント選択）。日本版Google検索は 前へ となっているため、設定を変えて利用する（settings.prevLinkRegex）。"
   },
   {
     "category": "Mouse Click",
@@ -96,7 +96,7 @@
     "new-stroke": "]]",
     "new-stroke-add": "",
     "desc-en": "Click on the next link on current page",
-    "desc-ja": "現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合は選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。"
+    "desc-ja": "現在表示中の領域にあるクリック要素のうち next や >> が含まれるもの、もしくは属性 [rel=next] のあるものをクリックする（複数ある場合はヒント選択）。日本版Google検索は 次へ となっているため、設定を変えて利用する（settings.nextLinkRegex）。"
   },
   {
     "category": "Mouse Click",
@@ -123,7 +123,7 @@
     "new-stroke": ";di",
     "new-stroke-add": "",
     "desc-en": "Download image",
-    "desc-ja": "現在表示中の領域にある画像要素にヒントを表示して画像ファイルをダウンロードする。"
+    "desc-ja": "現在表示中の領域にある画像をファイルとしてダウンロードする。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -132,7 +132,7 @@
     "new-stroke": ";u",
     "new-stroke-add": "",
     "desc-en": "Open detected links from text",
-    "desc-ja": "現在表示中の領域にあるURLテキストにヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。"
+    "desc-ja": "現在表示中の領域にあるURLテキストを開く。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -141,7 +141,7 @@
     "new-stroke": "f",
     "new-stroke-add": "",
     "desc-en": "Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints",
-    "desc-ja": "現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。"
+    "desc-ja": "現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。"
   },
   {
     "category": "Mouse Click",
@@ -168,7 +168,7 @@
     "new-stroke": ";mov",
     "new-stroke-add": "",
     "desc-en": "Mouse over elements.",
-    "desc-ja": "現在表示中の領域にある要素にヒントを表示して mouseover イベントを実行。"
+    "desc-ja": "現在表示中の領域にある要素に対して mouseover イベントを実行。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -177,7 +177,7 @@
     "new-stroke": ";mou",
     "new-stroke-add": "",
     "desc-en": "Mouse out elements.",
-    "desc-ja": "現在表示中の領域にある要素にヒントを表示して mouseout イベントを実行。"
+    "desc-ja": "現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -186,7 +186,7 @@
     "new-stroke": "i",
     "new-stroke-add": "",
     "desc-en": "Go to edit box",
-    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してクリック。要素が1つの場合はそのままクリック。"
+    "desc-ja": "現在表示中の領域にある入力要素をクリック。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -195,7 +195,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "現在表示中の領域にある入力要素にヒントを表示してVimエディタを開く。ノーマルモードでEnterを押すことで内容を入力要素に反映する。"
+    "desc-ja": "現在表示中の領域にある入力要素に対応するVimエディタを開く。複数ある場合はヒント選択。ノーマルモードでEnterを押すことで内容を入力要素に反映する。"
   },
   {
     "category": "Mouse Click",
@@ -213,7 +213,7 @@
     "new-stroke": ";f",
     "new-stroke-add": "",
     "desc-en": "Click on an Image or a button",
-    "desc-ja": "現在表示中の領域にある画像またはボタン要素にヒントを表示してクリック。要素が1つの場合はヒントなしでクリック。"
+    "desc-ja": "現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。"
   },
   {
     "category": "Mouse Click",
@@ -231,7 +231,7 @@
     "new-stroke": "0",
     "new-stroke-add": "",
     "desc-en": "Scroll all the way to the left",
-    "desc-ja": "左端にスクロール"
+    "desc-ja": "ページ左端にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -258,7 +258,7 @@
     "new-stroke": "e",
     "new-stroke-add": "",
     "desc-en": "Scroll half page up",
-    "desc-ja": ""
+    "desc-ja": "半ページ分上にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -267,7 +267,7 @@
     "new-stroke": "U",
     "new-stroke-add": "",
     "desc-en": "Scroll full page up",
-    "desc-ja": ""
+    "desc-ja": "１ページ分上にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -276,7 +276,7 @@
     "new-stroke": "d",
     "new-stroke-add": "",
     "desc-en": "Scroll half page down",
-    "desc-ja": ""
+    "desc-ja": "半ページ分下にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -285,7 +285,7 @@
     "new-stroke": "P",
     "new-stroke-add": "",
     "desc-en": "Scroll full page down",
-    "desc-ja": ""
+    "desc-ja": "１ページ分下にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -294,7 +294,7 @@
     "new-stroke": "gg",
     "new-stroke-add": "",
     "desc-en": "Scroll to the top of the page",
-    "desc-ja": ""
+    "desc-ja": "ページ上端にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -303,7 +303,7 @@
     "new-stroke": "G",
     "new-stroke-add": "",
     "desc-en": "Scroll to the bottom of the page",
-    "desc-ja": ""
+    "desc-ja": "ページ下端にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -312,7 +312,7 @@
     "new-stroke": "j",
     "new-stroke-add": "s",
     "desc-en": "Scroll down",
-    "desc-ja": ""
+    "desc-ja": "少し下にスクロール。移動幅は settings.scrollStepSize で指定。"
   },
   {
     "category": "Scroll Page / Element",
@@ -321,7 +321,7 @@
     "new-stroke": "k",
     "new-stroke-add": "w",
     "desc-en": "Scroll up",
-    "desc-ja": ""
+    "desc-ja": "少し上にスクロール。移動幅は settings.scrollStepSize で指定。"
   },
   {
     "category": "Scroll Page / Element",
@@ -330,7 +330,7 @@
     "new-stroke": "h",
     "new-stroke-add": "",
     "desc-en": "Scroll left",
-    "desc-ja": ""
+    "desc-ja": "少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
   },
   {
     "category": "Scroll Page / Element",
@@ -339,7 +339,7 @@
     "new-stroke": "l",
     "new-stroke-add": "",
     "desc-en": "Scroll right",
-    "desc-ja": ""
+    "desc-ja": "少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
   },
   {
     "category": "Scroll Page / Element",
@@ -348,7 +348,7 @@
     "new-stroke": "$",
     "new-stroke-add": "",
     "desc-en": "Scroll all the way to the right",
-    "desc-ja": "右端にスクロール"
+    "desc-ja": "ページ右端にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -357,7 +357,7 @@
     "new-stroke": "%",
     "new-stroke-add": "",
     "desc-en": "Scroll to percentage of current page",
-    "desc-ja": ""
+    "desc-ja": "数値を入力してから押すことで、指定されたパーセンテージの位置にスクロール"
   },
   {
     "category": "Scroll Page / Element",
@@ -384,7 +384,7 @@
     "new-stroke": "u",
     "new-stroke-add": "",
     "desc-en": "Scroll half page up",
-    "desc-ja": ""
+    "desc-ja": "半ページ分上にスクロール"
   },
   {
     "category": "Tabs",
@@ -393,7 +393,7 @@
     "new-stroke": "ty",
     "new-stroke-add": "",
     "desc-en": "Duplicate current tab",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを複製してアクティブにする"
   },
   {
     "category": "Tabs",
@@ -402,7 +402,7 @@
     "new-stroke": "tY",
     "new-stroke-add": "",
     "desc-en": "Duplicate current tab in background",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを非アクティブで複製する"
   },
   {
     "category": "Tabs",
@@ -411,7 +411,7 @@
     "new-stroke": "t0",
     "new-stroke-add": "",
     "desc-en": "Go to the first tab",
-    "desc-ja": ""
+    "desc-ja": "最初のタブに行く"
   },
   {
     "category": "Tabs",
@@ -420,7 +420,7 @@
     "new-stroke": "t$",
     "new-stroke-add": "",
     "desc-en": "Go to the last tab",
-    "desc-ja": ""
+    "desc-ja": "最後のタブに行く"
   },
   {
     "category": "Tabs",
@@ -429,7 +429,7 @@
     "new-stroke": "tx0",
     "new-stroke-add": "",
     "desc-en": "Close all tabs on left",
-    "desc-ja": ""
+    "desc-ja": "左にあるタブをすべて閉じる"
   },
   {
     "category": "Tabs",
@@ -438,7 +438,7 @@
     "new-stroke": "txl",
     "new-stroke-add": "",
     "desc-en": "Close tab on left",
-    "desc-ja": ""
+    "desc-ja": "左のタブを閉じる"
   },
   {
     "category": "Tabs",
@@ -447,7 +447,7 @@
     "new-stroke": "txr",
     "new-stroke-add": "",
     "desc-en": "Close tab on right",
-    "desc-ja": ""
+    "desc-ja": "右のタブを閉じる"
   },
   {
     "category": "Tabs",
@@ -456,7 +456,7 @@
     "new-stroke": "tx$",
     "new-stroke-add": "",
     "desc-en": "Close all tabs on right",
-    "desc-ja": ""
+    "desc-ja": "右にあるタブをすべて閉じる"
   },
   {
     "category": "Tabs",
@@ -465,7 +465,7 @@
     "new-stroke": "txx",
     "new-stroke-add": "",
     "desc-en": "Close all tabs except current one",
-    "desc-ja": ""
+    "desc-ja": "現在のタブ以外をすべて閉じる"
   },
   {
     "category": "Tabs",
@@ -483,7 +483,7 @@
     "new-stroke": "E",
     "new-stroke-add": "J",
     "desc-en": "Go one tab left",
-    "desc-ja": ""
+    "desc-ja": "左のタブに行く"
   },
   {
     "category": "Tabs",
@@ -492,7 +492,7 @@
     "new-stroke": "R",
     "new-stroke-add": "K",
     "desc-en": "Go one tab right",
-    "desc-ja": ""
+    "desc-ja": "右のタブに行く"
   },
   {
     "category": "Tabs",
@@ -501,7 +501,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Choose a tab",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを表示し、現在開いているタブを候補として選択したタブに移動する。"
   },
   {
     "category": "Tabs",
@@ -528,7 +528,7 @@
     "new-stroke": "zr",
     "new-stroke-add": "",
     "desc-en": "zoom reset",
-    "desc-ja": ""
+    "desc-ja": "ズーム状態をリセットして100%に戻す。"
   },
   {
     "category": "Tabs",
@@ -537,7 +537,7 @@
     "new-stroke": "zi",
     "new-stroke-add": "",
     "desc-en": "zoom in",
-    "desc-ja": ""
+    "desc-ja": "ズームイン"
   },
   {
     "category": "Tabs",
@@ -546,7 +546,7 @@
     "new-stroke": "zo",
     "new-stroke-add": "",
     "desc-en": "zoom out",
-    "desc-ja": ""
+    "desc-ja": "ズームアウト"
   },
   {
     "category": "Tabs",
@@ -555,7 +555,7 @@
     "new-stroke": "tp",
     "new-stroke-add": "",
     "desc-en": "pin/unpin current tab",
-    "desc-ja": ""
+    "desc-ja": "現在のタブをピン留め・解除"
   },
   {
     "category": "Tabs",
@@ -564,7 +564,7 @@
     "new-stroke": "tm",
     "new-stroke-add": "",
     "desc-en": "mute/unmute current tab",
-    "desc-ja": ""
+    "desc-ja": "現在のタブをミュート・解除"
   },
   {
     "category": "Tabs",
@@ -573,7 +573,7 @@
     "new-stroke": "tn",
     "new-stroke-add": "",
     "desc-en": "Open newtab",
-    "desc-ja": ""
+    "desc-ja": "新しいタブを開いてアクティブにする"
   },
   {
     "category": "Tabs",
@@ -582,7 +582,7 @@
     "new-stroke": "x",
     "new-stroke-add": "",
     "desc-en": "Close current tab",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを閉じる"
   },
   {
     "category": "Tabs",
@@ -591,7 +591,7 @@
     "new-stroke": "X",
     "new-stroke-add": "",
     "desc-en": "Restore closed tab",
-    "desc-ja": ""
+    "desc-ja": "閉じたタブを復元する"
   },
   {
     "category": "Tabs",
@@ -600,7 +600,7 @@
     "new-stroke": "W",
     "new-stroke-add": "",
     "desc-en": "Move current tab to another window",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを新規ウィンドウに移動する"
   },
   {
     "category": "Tabs",
@@ -609,7 +609,7 @@
     "new-stroke": "<<",
     "new-stroke-add": "",
     "desc-en": "Move current tab to left",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを左に移動する"
   },
   {
     "category": "Tabs",
@@ -618,7 +618,7 @@
     "new-stroke": ">>",
     "new-stroke-add": "",
     "desc-en": "Move current tab to right",
-    "desc-ja": ""
+    "desc-ja": "現在のタブを右に移動する"
   },
   {
     "category": "Page Navigation",
@@ -627,7 +627,7 @@
     "new-stroke": "gu",
     "new-stroke-add": "",
     "desc-en": "Go up one path in the URL",
-    "desc-ja": ""
+    "desc-ja": "URLの1つ上のディレクトリにアクセスする"
   },
   {
     "category": "Page Navigation",
@@ -654,7 +654,7 @@
     "new-stroke": "tgp",
     "new-stroke-add": "",
     "desc-en": "Go to the playing tab",
-    "desc-ja": "音声再生中のタブをアクティブにする。複数ある場合は、最後にアクティブにしたものが対象。"
+    "desc-ja": "音声再生中のタブをアクティブにする。複数ある場合は最後にアクティブにしたものが対象。"
   },
   {
     "category": "Page Navigation",
@@ -663,7 +663,7 @@
     "new-stroke": "g?",
     "new-stroke-add": "",
     "desc-en": "Reload current page without query string(all parts after question mark)",
-    "desc-ja": ""
+    "desc-ja": "URLのクエリストリングを除去してリロード"
   },
   {
     "category": "Page Navigation",
@@ -672,7 +672,7 @@
     "new-stroke": "g#",
     "new-stroke-add": "",
     "desc-en": "Reload current page without hash fragment",
-    "desc-ja": ""
+    "desc-ja": "URLのハッシュフラグメントを除去してリロード"
   },
   {
     "category": "Page Navigation",
@@ -681,7 +681,7 @@
     "new-stroke": "gU",
     "new-stroke-add": "",
     "desc-en": "Go to root of current URL hierarchy",
-    "desc-ja": ""
+    "desc-ja": "URLのドメイン直下にアクセスする"
   },
   {
     "category": "Page Navigation",
@@ -690,7 +690,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Edit current URL with vim editor, and open in new tab",
-    "desc-ja": ""
+    "desc-ja": "URLをVimエディタで開いて編集し、新しいタブで開く"
   },
   {
     "category": "Page Navigation",
@@ -699,7 +699,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Edit current URL with vim editor, and reload",
-    "desc-ja": ""
+    "desc-ja": "URLをVimエディタで開いて編集し、現在のタブで開く"
   },
   {
     "category": "Page Navigation",
@@ -708,7 +708,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go one tab history back",
-    "desc-ja": ""
+    "desc-ja": "タブのアクティブ履歴を1つ戻す"
   },
   {
     "category": "Page Navigation",
@@ -717,7 +717,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go one tab history forward",
-    "desc-ja": ""
+    "desc-ja": "タブのアクティブ履歴を1つ進む"
   },
   {
     "category": "Page Navigation",
@@ -726,7 +726,7 @@
     "new-stroke": "t;",
     "new-stroke-add": "",
     "desc-en": "Go to last used tab",
-    "desc-ja": ""
+    "desc-ja": "直前に使っていたタブに行く"
   },
   {
     "category": "Page Navigation",
@@ -735,7 +735,7 @@
     "new-stroke": "S",
     "new-stroke-add": "H",
     "desc-en": "Go back in history",
-    "desc-ja": ""
+    "desc-ja": "戻る"
   },
   {
     "category": "Page Navigation",
@@ -744,7 +744,7 @@
     "new-stroke": "D",
     "new-stroke-add": "L",
     "desc-en": "Go forward in history",
-    "desc-ja": ""
+    "desc-ja": "進む"
   },
   {
     "category": "Page Navigation",
@@ -753,7 +753,7 @@
     "new-stroke": "r",
     "new-stroke-add": "",
     "desc-en": "Reload the page",
-    "desc-ja": ""
+    "desc-ja": "リロード"
   },
   {
     "category": "Sessions",
@@ -762,7 +762,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Save session and quit",
-    "desc-ja": "セッション(*)を LAST という名前で保存しChromeを終了する。"
+    "desc-ja": "セッションを LAST という名前で保存しChromeを終了する。"
   },
   {
     "category": "Sessions",
@@ -780,7 +780,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with google",
-    "desc-ja": ""
+    "desc-ja": "Googleにて選択テキストで検索したページを新規タブで開く。選択テキストとはページ内の選択テキスト、Visualモードでの選択テキスト、クリップボード。"
   },
   {
     "category": "Search selected with",
@@ -789,7 +789,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with duckduckgo",
-    "desc-ja": ""
+    "desc-ja": "DuckDuckGoにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -798,7 +798,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with baidu",
-    "desc-ja": ""
+    "desc-ja": "Baiduにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -807,7 +807,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with wikipedia",
-    "desc-ja": ""
+    "desc-ja": "Wikipedia(英語版)にて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -816,7 +816,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with bing",
-    "desc-ja": ""
+    "desc-ja": "Bingにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -825,7 +825,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with stackoverflow",
-    "desc-ja": ""
+    "desc-ja": "StackOverflowにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -834,7 +834,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with github",
-    "desc-ja": ""
+    "desc-ja": "GitHubにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Search selected with",
@@ -843,7 +843,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Search selected with youtube",
-    "desc-ja": ""
+    "desc-ja": "YouTubeにて選択テキストで検索したページを新規タブで開く。"
   },
   {
     "category": "Clipboard",
@@ -852,7 +852,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Capture current full page",
-    "desc-ja": ""
+    "desc-ja": "現在のページ全体をキャプチャ"
   },
   {
     "category": "Clipboard",
@@ -861,7 +861,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Capture scrolling element",
-    "desc-ja": ""
+    "desc-ja": "現在スクロール中の要素をキャプチャ"
   },
   {
     "category": "Clipboard",
@@ -879,7 +879,7 @@
     "new-stroke": "ymv",
     "new-stroke-add": "",
     "desc-en": "Yank text of multiple elements",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるテキストにヒントを表示し、指定したものをクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードに改行区切りで保管される。"
   },
   {
     "category": "Clipboard",
@@ -888,7 +888,7 @@
     "new-stroke": "yma",
     "new-stroke-add": "",
     "desc-en": "Copy multiple link URLs to the clipboard",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるURLを持つ要素にヒントを表示し、指定したものをクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードに改行区切りで保管される。"
   },
   {
     "category": "Clipboard",
@@ -897,7 +897,7 @@
     "new-stroke": "ymc",
     "new-stroke-add": "",
     "desc-en": "Copy multiple columns of a table",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるテーブル要素の列にヒントを表示し、指定したものを改行区切りでクリップボードにコピー、という動作を繰り返す。EnterやEscで終了。クリップボードにタブ区切りで保管されるため、見た目通りの並びとなり、Excelにそのまま貼り付けられる。"
   },
   {
     "category": "Clipboard",
@@ -906,7 +906,7 @@
     "new-stroke": "yg",
     "new-stroke-add": "",
     "desc-en": "Capture current page",
-    "desc-ja": "現在表示中の領域をキャプチャ"
+    "desc-ja": "現在表示中の領域をキャプチャ。結果は現在のページにポップアップで表示される。Base64のPNG形式。"
   },
   {
     "category": "Clipboard",
@@ -915,7 +915,7 @@
     "new-stroke": "ya",
     "new-stroke-add": "",
     "desc-en": "Copy a link URL to the clipboard",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるURLを持つ要素をクリップボードにコピーする。複数ある場合はヒント選択。"
   },
   {
     "category": "Clipboard",
@@ -924,7 +924,7 @@
     "new-stroke": "yc",
     "new-stroke-add": "",
     "desc-en": "Copy a column of a table",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるテーブル要素の列にヒントを表示し、指定したものを改行区切りでクリップボードにコピー。"
   },
   {
     "category": "Clipboard",
@@ -933,7 +933,7 @@
     "new-stroke": "yq",
     "new-stroke-add": "",
     "desc-en": "Copy pre text",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にあるpre要素をクリップボードにコピー。複数ある場合はヒント選択。"
   },
   {
     "category": "Clipboard",
@@ -942,7 +942,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Yank text of an input",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にある入力要素(value属性値)をクリップボードにコピー。複数ある場合はヒント選択。"
   },
   {
     "category": "Clipboard",
@@ -951,7 +951,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Copy current page's source",
-    "desc-ja": ""
+    "desc-ja": "現在のページのソースコードをクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -960,7 +960,7 @@
     "new-stroke": "y@e",
     "new-stroke-add": "",
     "desc-en": "Copy current settings",
-    "desc-ja": ""
+    "desc-ja": "Surfingkeysで保持している現在の利用状況データをクリップボードにコピーする"
   },
   {
     "category": "Clipboard",
@@ -969,7 +969,7 @@
     "new-stroke": "yy",
     "new-stroke-add": "",
     "desc-en": "Copy current page's URL",
-    "desc-ja": ""
+    "desc-ja": "現在のページのURLをクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -978,7 +978,7 @@
     "new-stroke": "yY",
     "new-stroke-add": "",
     "desc-en": "Copy all tabs's url",
-    "desc-ja": ""
+    "desc-ja": "現在開いているすべてのタブのURLをクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -987,7 +987,7 @@
     "new-stroke": "yh",
     "new-stroke-add": "",
     "desc-en": "Copy current page's host",
-    "desc-ja": ""
+    "desc-ja": "現在のページのホスト名をクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -996,7 +996,7 @@
     "new-stroke": "yl",
     "new-stroke-add": "",
     "desc-en": "Copy current page's title",
-    "desc-ja": ""
+    "desc-ja": "現在のページのタイトルをクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -1005,7 +1005,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Copy all query history of OmniQuery.",
-    "desc-ja": ""
+    "desc-ja": "単語翻訳機能 `Q`（オムニクエリ、インラインクエリ）の履歴をクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -1032,7 +1032,7 @@
     "new-stroke": "yd",
     "new-stroke-add": "",
     "desc-en": "Copy current downloading URL",
-    "desc-ja": ""
+    "desc-ja": "ダウンロード中のURLをクリップボードにコピー"
   },
   {
     "category": "Clipboard",
@@ -1041,7 +1041,7 @@
     "new-stroke": ";q",
     "new-stroke-add": "",
     "desc-en": "Query word with Hints",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にある単語にヒントを表示して単語翻訳機能にかける"
   },
   {
     "category": "Clipboard",
@@ -1050,7 +1050,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Open selected link or link from clipboard",
-    "desc-ja": ""
+    "desc-ja": "選択したテキストまたはクリップボードのテキストをURLとして新規タブで開く"
   },
   {
     "category": "Clipboard",
@@ -1068,7 +1068,7 @@
     "new-stroke": "@re",
     "new-stroke-add": "",
     "desc-en": "Restore settings data from clipboard",
-    "desc-ja": ""
+    "desc-ja": "Surfingkeysで保持している現在の利用状況データをクリップボードから復元する"
   },
   {
     "category": "Clipboard",
@@ -1095,7 +1095,7 @@
     "new-stroke": "Q",
     "new-stroke-add": "",
     "desc-en": "Open omnibar for word translation",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを表示し、単語翻訳機能（オムニクエリ、インラインクエリ）を実行"
   },
   {
     "category": "Omnibar",
@@ -1104,7 +1104,7 @@
     "new-stroke": "ab",
     "new-stroke-add": "",
     "desc-en": "Bookmark current page to selected folder",
-    "desc-ja": "オムニバーを表示し、ブックマークフォルダを候補に表示し、選択したフォルダに現在のページを追加する"
+    "desc-ja": "オムニバーを表示し、ブックマークフォルダを候補として選択したフォルダに現在のページを追加する"
   },
   {
     "category": "Omnibar",
@@ -1122,7 +1122,7 @@
     "new-stroke": "om",
     "new-stroke-add": "",
     "desc-en": "Open URL from vim-like marks",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを表示し、マークを候補としてアクティブな新しいタブで開く"
   },
   {
     "category": "Omnibar",
@@ -1194,7 +1194,7 @@
     "new-stroke": "ox",
     "new-stroke-add": "",
     "desc-en": "Open recently closed URL",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを表示し、最近閉じたタブの中から選択してアクティブな新規タブで開く"
   },
   {
     "category": "Omnibar",
@@ -1203,7 +1203,7 @@
     "new-stroke": "oh",
     "new-stroke-add": "",
     "desc-en": "Open URL from history",
-    "desc-ja": "訪問回数ランキングの履歴リスト"
+    "desc-ja": "オムニバーを表示し、訪問回数ランキングの履歴リストの中から選択してアクティブな新規タブで開く"
   },
   {
     "category": "Omnibar",
@@ -1212,7 +1212,7 @@
     "new-stroke": "oH",
     "new-stroke-add": "",
     "desc-en": "Open opened URL in current tab",
-    "desc-ja": "現在のタブの中で遷移してきた履歴のリスト"
+    "desc-ja": "オムニバーを表示し、現在のタブの中で遷移してきた履歴のリストの中から選択してアクティブな新規タブで開く"
   },
   {
     "category": "Omnibar",
@@ -1221,7 +1221,7 @@
     "new-stroke": ":",
     "new-stroke-add": "",
     "desc-en": "Open commands",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを表示し、コマンドを実行する"
   },
   {
     "category": "Omnibar",
@@ -1239,7 +1239,7 @@
     "new-stroke": "b",
     "new-stroke-add": "",
     "desc-en": "Open a bookmark",
-    "desc-ja": "オムニバーを表示し、ブックマークの中から選択して新規タブで開いて移動する。"
+    "desc-ja": "オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く"
   },
   {
     "category": "Omnibar",
@@ -1248,7 +1248,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Delete focused item from bookmark or history",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する"
   },
   {
     "category": "Omnibar",
@@ -1257,7 +1257,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "Iと同じ"
+    "desc-ja": "`I`と同じ"
   },
   {
     "category": "Omnibar",
@@ -1266,7 +1266,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Mouse out elements.",
-    "desc-ja": "現在表示中の領域にある要素にヒントを表示して mouseout イベントを実行。"
+    "desc-ja": "現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。"
   },
   {
     "category": "Omnibar",
@@ -1275,7 +1275,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Show results of next page",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの結果リストを次のページに切り替える"
   },
   {
     "category": "Omnibar",
@@ -1284,7 +1284,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Show results of previous page",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの結果リストを前のページに切り替える"
   },
   {
     "category": "Omnibar",
@@ -1293,7 +1293,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Copy selected item url or all listed item urls",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで選択中の項目のURLをクリップボードにコピーする。選択なしの場合は結果リストのURLをすべてコピーする。"
   },
   {
     "category": "Omnibar",
@@ -1302,7 +1302,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Delete all listed items from bookmark or history",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで表示しているブックマークまたは履歴をすべて削除する"
   },
   {
     "category": "Omnibar",
@@ -1311,7 +1311,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Re-sort history by visitCount or lastVisitTime",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで履歴を表示するとき、並び順を訪問回数もしくは最終訪問日時で切り替える"
   },
   {
     "category": "Omnibar",
@@ -1320,7 +1320,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Close Omnibar",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを閉じる"
   },
   {
     "category": "Omnibar",
@@ -1329,7 +1329,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Create vim-like mark for selected item",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで選択中の項目をマークする"
   },
   {
     "category": "Omnibar",
@@ -1338,7 +1338,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで次を選択"
   },
   {
     "category": "Omnibar",
@@ -1347,7 +1347,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで前を選択"
   },
   {
     "category": "Omnibar",
@@ -1356,7 +1356,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Toggle quotes in an input element",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
   },
   {
     "category": "Omnibar",
@@ -1365,7 +1365,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで次を選択"
   },
   {
     "category": "Omnibar",
@@ -1374,7 +1374,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで前を選択"
   },
   {
     "category": "Omnibar",
@@ -1383,7 +1383,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで次を選択"
   },
   {
     "category": "Omnibar",
@@ -1392,7 +1392,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの候補リストで前を選択"
   },
   {
     "category": "Visual Mode",
@@ -1401,7 +1401,7 @@
     "new-stroke": "/",
     "new-stroke-add": "",
     "desc-en": "Find in current page",
-    "desc-ja": ""
+    "desc-ja": "画面右下に検索窓を表示してページ内検索を開始"
   },
   {
     "category": "Visual Mode",
@@ -1446,7 +1446,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Next found text",
-    "desc-ja": ""
+    "desc-ja": "次の候補に移動"
   },
   {
     "category": "Visual Mode",
@@ -1455,7 +1455,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Previous found text",
-    "desc-ja": ""
+    "desc-ja": "前の候補に移動"
   },
   {
     "category": "Visual Mode",
@@ -1464,7 +1464,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll all the way to the left",
-    "desc-ja": "左端にスクロール"
+    "desc-ja": "ページ左端にスクロール"
   },
   {
     "category": "Visual Mode",
@@ -1473,7 +1473,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll right",
-    "desc-ja": ""
+    "desc-ja": "少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
   },
   {
     "category": "Visual Mode",
@@ -1482,7 +1482,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll left",
-    "desc-ja": ""
+    "desc-ja": "少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
   },
   {
     "category": "Visual Mode",
@@ -1491,7 +1491,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll down",
-    "desc-ja": ""
+    "desc-ja": "少し下にスクロール。移動幅は settings.scrollStepSize で指定。"
   },
   {
     "category": "Visual Mode",
@@ -1500,7 +1500,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll up",
-    "desc-ja": ""
+    "desc-ja": "少し上にスクロール。移動幅は settings.scrollStepSize で指定。"
   },
   {
     "category": "Visual Mode",
@@ -1518,7 +1518,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll half page up",
-    "desc-ja": ""
+    "desc-ja": "半ページ分上にスクロール"
   },
   {
     "category": "Visual Mode",
@@ -1527,7 +1527,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Open a bookmark",
-    "desc-ja": "オムニバーを表示し、ブックマークの中から選択して新規タブで開いて移動する。"
+    "desc-ja": "オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く"
   },
   {
     "category": "Visual Mode",
@@ -1572,7 +1572,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll all the way to the right",
-    "desc-ja": "右端にスクロール"
+    "desc-ja": "ページ右端にスクロール"
   },
   {
     "category": "Visual Mode",
@@ -1581,7 +1581,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll to the bottom of the page",
-    "desc-ja": ""
+    "desc-ja": "ページ下端にスクロール"
   },
   {
     "category": "Visual Mode",
@@ -1590,7 +1590,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll to the top of the page",
-    "desc-ja": ""
+    "desc-ja": "ページ上端にスクロール"
   },
   {
     "category": "Visual Mode",
@@ -1599,7 +1599,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Read selected text",
-    "desc-ja": ""
+    "desc-ja": "選択テキストを読み上げ開始"
   },
   {
     "category": "Visual Mode",
@@ -1608,7 +1608,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to Other end of highlighted text",
-    "desc-ja": ""
+    "desc-ja": "選択範囲のカーソル位置を、始端もしくは終端で切り替える"
   },
   {
     "category": "Visual Mode",
@@ -1671,7 +1671,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints",
-    "desc-ja": "現在表示中の領域にあるクリック要素にヒントを表示して開く。要素が1つの場合はヒントなしですぐに開く。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。ヒントを表示したあとShiftキーを押しながら選択すると、アクティブな新しいタブで開く。"
+    "desc-ja": "現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。"
   },
   {
     "category": "Visual Mode",
@@ -1680,7 +1680,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go one tab history forward",
-    "desc-ja": ""
+    "desc-ja": "タブのアクティブ履歴を1つ進む"
   },
   {
     "category": "Visual Mode",
@@ -1734,7 +1734,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Delete focused item from bookmark or history",
-    "desc-ja": ""
+    "desc-ja": "オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する"
   },
   {
     "category": "Visual Mode",
@@ -1752,7 +1752,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Click on an Image or a button",
-    "desc-ja": ""
+    "desc-ja": "現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。"
   },
   {
     "category": "vim-like marks",
@@ -1779,7 +1779,7 @@
     "new-stroke": "M",
     "new-stroke-add": "",
     "desc-en": "Toggle quotes in an input element",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
   },
   {
     "category": "Settings",
@@ -1986,7 +1986,7 @@
     "new-stroke": "@R",
     "new-stroke-add": "",
     "desc-en": "Read selected text",
-    "desc-ja": ""
+    "desc-ja": "選択テキストを読み上げ開始"
   },
   {
     "category": "Misc",
@@ -2049,7 +2049,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Move the cursor to the end of the line",
-    "desc-ja": ""
+    "desc-ja": "カーソルを行末に移動"
   },
   {
     "category": "Insert Mode",
@@ -2058,7 +2058,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Move the cursor to the beginning of the line",
-    "desc-ja": ""
+    "desc-ja": "カーソルを文頭に移動"
   },
   {
     "category": "Insert Mode",
@@ -2076,7 +2076,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Move the cursor Backward 1 word",
-    "desc-ja": ""
+    "desc-ja": "カーソルを1単語前に移動"
   },
   {
     "category": "Insert Mode",
@@ -2085,7 +2085,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Move the cursor Forward 1 word",
-    "desc-ja": ""
+    "desc-ja": "カーソルを1単語次に移動"
   },
   {
     "category": "Insert Mode",
@@ -2094,7 +2094,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Delete a word backwards",
-    "desc-ja": ""
+    "desc-ja": "前の単語を削除"
   },
   {
     "category": "Insert Mode",
@@ -2103,7 +2103,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Delete a word forwards",
-    "desc-ja": ""
+    "desc-ja": "次の単語を削除"
   },
   {
     "category": "Insert Mode",
@@ -2112,7 +2112,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Close Omnibar",
-    "desc-ja": ""
+    "desc-ja": "オムニバーを閉じる"
   },
   {
     "category": "Insert Mode",
@@ -2121,7 +2121,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Toggle quotes in an input element",
-    "desc-ja": ""
+    "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
   },
   {
     "category": "Insert Mode",
@@ -2130,7 +2130,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "Iと同じ"
+    "desc-ja": "`I`と同じ"
   },
   {
     "category": "Insert Mode",
@@ -2139,15 +2139,15 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to edit box with neo vim editor",
-    "desc-ja": ""
+    "desc-ja": "`I`と同じ（Neovimエディタ）"
   },
   {
     "category": "Secret",
-    "mode": "",
+    "mode": "normal",
     "old-stroke": "ZQ",
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "",
-    "desc-ja": ""
+    "desc-ja": ":quit コマンドを実行してChromeを終了する"
   }
 ]
