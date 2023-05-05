@@ -43,6 +43,9 @@
           <span style="font-size: 10px">または</span>
           <code class="keystroke">{{ item.stroke2 }}</code>
         </span>
+        <span v-if="!item.stroke && isCustom">
+          <span class="grey--text text--lighten-2">（未使用）</span>
+        </span>
       </template>
       <template #item.desc="{ item }">
         <span v-html="item.desc" />
