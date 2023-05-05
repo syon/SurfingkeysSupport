@@ -147,7 +147,7 @@
     "category": "Mouse Click",
     "mode": "normal",
     "old-stroke": "af",
-    "new-stroke": "",
+    "new-stroke": "F",
     "new-stroke-add": "",
     "desc-en": "Open a link in active new tab",
     "desc-ja": "`f`をアクティブな新しいタブで開く状態で実行。"
@@ -156,7 +156,7 @@
     "category": "Mouse Click",
     "mode": "normal",
     "old-stroke": "C",
-    "new-stroke": "F",
+    "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Open a link in non-active new tab",
     "desc-ja": "`f`を非アクティブな新しいタブで開く状態で実行。"
@@ -264,7 +264,7 @@
     "category": "Scroll Page / Element",
     "mode": "normal",
     "old-stroke": "U",
-    "new-stroke": "U",
+    "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll full page up",
     "desc-ja": "１ページ分上にスクロール"
@@ -282,7 +282,7 @@
     "category": "Scroll Page / Element",
     "mode": "normal",
     "old-stroke": "P",
-    "new-stroke": "P",
+    "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Scroll full page down",
     "desc-ja": "１ページ分下にスクロール"
@@ -366,7 +366,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Focus top window",
-    "desc-ja": ""
+    "desc-ja": "ウィンドウ階層の最上位にフォーカスを移す。フレームが使われているページで利用。"
   },
   {
     "category": "Scroll Page / Element",
@@ -636,7 +636,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to first activated tab",
-    "desc-ja": ""
+    "desc-ja": "タブのアクティブ履歴の最初に行く"
   },
   {
     "category": "Page Navigation",
@@ -645,7 +645,7 @@
     "new-stroke": "",
     "new-stroke-add": "",
     "desc-en": "Go to last activated tab",
-    "desc-ja": ""
+    "desc-ja": "タブのアクティブ履歴の最後に行く"
   },
   {
     "category": "Page Navigation",
@@ -1245,7 +1245,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-d>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-d>",
     "new-stroke-add": "",
     "desc-en": "Delete focused item from bookmark or history",
     "desc-ja": "オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する"
@@ -1254,25 +1254,25 @@
     "category": "Omnibar",
     "mode": "normal",
     "old-stroke": "<Ctrl-i>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-i>",
     "new-stroke-add": "",
-    "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "`I`と同じ"
+    "desc-en": "Edit selected URL with vim editor, then open",
+    "desc-ja": "オムニバーで選択中のURLをVimエディタで編集してアクティブな新しいタブで開く"
   },
   {
     "category": "Omnibar",
     "mode": "normal",
     "old-stroke": "<Ctrl-j>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-j>",
     "new-stroke-add": "",
-    "desc-en": "Mouse out elements.",
-    "desc-ja": "現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。"
+    "desc-en": "Toggle Omnibar's position",
+    "desc-ja": "オムニバーの表示位置をページ上部・下部で切り替える"
   },
   {
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-.>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-.>",
     "new-stroke-add": "",
     "desc-en": "Show results of next page",
     "desc-ja": "オムニバーの結果リストを次のページに切り替える"
@@ -1281,7 +1281,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-,>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-,>",
     "new-stroke-add": "",
     "desc-en": "Show results of previous page",
     "desc-ja": "オムニバーの結果リストを前のページに切り替える"
@@ -1290,7 +1290,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-c>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-c>",
     "new-stroke-add": "",
     "desc-en": "Copy selected item url or all listed item urls",
     "desc-ja": "オムニバーで選択中の項目のURLをクリップボードにコピーする。選択なしの場合は結果リストのURLをすべてコピーする。"
@@ -1299,7 +1299,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-D>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-D>",
     "new-stroke-add": "",
     "desc-en": "Delete all listed items from bookmark or history",
     "desc-ja": "オムニバーで表示しているブックマークまたは履歴をすべて削除する"
@@ -1308,7 +1308,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-r>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-r>",
     "new-stroke-add": "",
     "desc-en": "Re-sort history by visitCount or lastVisitTime",
     "desc-ja": "オムニバーで履歴を表示するとき、並び順を訪問回数もしくは最終訪問日時で切り替える"
@@ -1317,7 +1317,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Esc>",
-    "new-stroke": "",
+    "new-stroke": "<Esc>",
     "new-stroke-add": "",
     "desc-en": "Close Omnibar",
     "desc-ja": "オムニバーを閉じる"
@@ -1326,7 +1326,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-m>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-m>",
     "new-stroke-add": "",
     "desc-en": "Create vim-like mark for selected item",
     "desc-ja": "オムニバーで選択中の項目をマークする"
@@ -1335,7 +1335,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Tab>",
-    "new-stroke": "",
+    "new-stroke": "<Tab>",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで次を選択"
@@ -1344,7 +1344,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Shift-Tab>",
-    "new-stroke": "",
+    "new-stroke": "<Shift-Tab>",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで前を選択"
@@ -1353,7 +1353,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-'>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-'>",
     "new-stroke-add": "",
     "desc-en": "Toggle quotes in an input element",
     "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
@@ -1362,7 +1362,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<ArrowDown>",
-    "new-stroke": "",
+    "new-stroke": "<ArrowDown>",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで次を選択"
@@ -1371,7 +1371,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<ArrowUp>",
-    "new-stroke": "",
+    "new-stroke": "<ArrowUp>",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで前を選択"
@@ -1380,7 +1380,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-n>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-n>",
     "new-stroke-add": "",
     "desc-en": "Forward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで次を選択"
@@ -1389,7 +1389,7 @@
     "category": "Omnibar",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-p>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-p>",
     "new-stroke-add": "",
     "desc-en": "Backward cycle through the candidates.",
     "desc-ja": "オムニバーの候補リストで前を選択"
@@ -1443,7 +1443,7 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "n",
-    "new-stroke": "",
+    "new-stroke": "n",
     "new-stroke-add": "",
     "desc-en": "Next found text",
     "desc-ja": "次の候補に移動"
@@ -1452,7 +1452,7 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "N",
-    "new-stroke": "",
+    "new-stroke": "N",
     "new-stroke-add": "",
     "desc-en": "Previous found text",
     "desc-ja": "前の候補に移動"
@@ -1461,79 +1461,79 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "0",
-    "new-stroke": "",
+    "new-stroke": "0",
     "new-stroke-add": "",
-    "desc-en": "Scroll all the way to the left",
-    "desc-ja": "ページ左端にスクロール"
+    "desc-en": "backward lineboundary",
+    "desc-ja": "前の行境界にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "l",
-    "new-stroke": "",
+    "new-stroke": "l",
     "new-stroke-add": "",
-    "desc-en": "Scroll right",
-    "desc-ja": "少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
+    "desc-en": "forward character",
+    "desc-ja": "次の文字にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "h",
-    "new-stroke": "",
+    "new-stroke": "h",
     "new-stroke-add": "",
-    "desc-en": "Scroll left",
-    "desc-ja": "少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。"
+    "desc-en": "backward character",
+    "desc-ja": "前の文字にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "j",
-    "new-stroke": "",
+    "new-stroke": "j",
     "new-stroke-add": "",
-    "desc-en": "Scroll down",
-    "desc-ja": "少し下にスクロール。移動幅は settings.scrollStepSize で指定。"
+    "desc-en": "forward line",
+    "desc-ja": "次の行にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "k",
-    "new-stroke": "",
+    "new-stroke": "k",
     "new-stroke-add": "",
-    "desc-en": "Scroll up",
-    "desc-ja": "少し上にスクロール。移動幅は settings.scrollStepSize で指定。"
+    "desc-en": "backward line",
+    "desc-ja": "前の行にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "w",
-    "new-stroke": "",
+    "new-stroke": "w",
     "new-stroke-add": "",
-    "desc-en": "Switch frames",
-    "desc-ja": "操作対象のフレームを順に切り替えてフォーカスを移す。"
+    "desc-en": "forward word",
+    "desc-ja": "次の単語にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "e",
-    "new-stroke": "",
+    "new-stroke": "e",
     "new-stroke-add": "",
-    "desc-en": "Scroll half page up",
-    "desc-ja": "半ページ分上にスクロール"
+    "desc-en": "forward word",
+    "desc-ja": "次の単語にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "b",
-    "new-stroke": "",
+    "new-stroke": "b",
     "new-stroke-add": "",
-    "desc-en": "Open a bookmark",
-    "desc-ja": "オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く"
+    "desc-en": "backward word",
+    "desc-ja": "前の単語にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": ")",
-    "new-stroke": "",
+    "new-stroke": ")",
     "new-stroke-add": "",
     "desc-en": "forward sentence",
     "desc-ja": "次の文にカーソルを移動"
@@ -1542,7 +1542,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "(",
-    "new-stroke": "",
+    "new-stroke": "(",
     "new-stroke-add": "",
     "desc-en": "backward sentence",
     "desc-ja": "前の文にカーソルを移動"
@@ -1551,7 +1551,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "}",
-    "new-stroke": "",
+    "new-stroke": "}",
     "new-stroke-add": "",
     "desc-en": "forward paragraphboundary",
     "desc-ja": "次の段落境界にカーソルを移動"
@@ -1560,7 +1560,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "{",
-    "new-stroke": "",
+    "new-stroke": "{",
     "new-stroke-add": "",
     "desc-en": "backward paragraphboundary",
     "desc-ja": "前の段落境界にカーソルを移動"
@@ -1569,34 +1569,34 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "$",
-    "new-stroke": "",
+    "new-stroke": "$",
     "new-stroke-add": "",
-    "desc-en": "Scroll all the way to the right",
-    "desc-ja": "ページ右端にスクロール"
+    "desc-en": "forward lineboundary",
+    "desc-ja": "次の行境界にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "G",
-    "new-stroke": "",
+    "new-stroke": "G",
     "new-stroke-add": "",
-    "desc-en": "Scroll to the bottom of the page",
-    "desc-ja": "ページ下端にスクロール"
+    "desc-en": "forward documentboundary",
+    "desc-ja": "ドキュメントの末尾にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "gg",
-    "new-stroke": "",
+    "new-stroke": "gg",
     "new-stroke-add": "",
-    "desc-en": "Scroll to the top of the page",
-    "desc-ja": "ページ上端にスクロール"
+    "desc-en": "backward documentboundary",
+    "desc-ja": "ドキュメントの先頭にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "gr",
-    "new-stroke": "",
+    "new-stroke": "gr",
     "new-stroke-add": "",
     "desc-en": "Read selected text",
     "desc-ja": "選択テキストを読み上げ開始"
@@ -1605,7 +1605,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "o",
-    "new-stroke": "",
+    "new-stroke": "o",
     "new-stroke-add": "",
     "desc-en": "Go to Other end of highlighted text",
     "desc-ja": "選択範囲のカーソル位置を、始端もしくは終端で切り替える"
@@ -1614,16 +1614,16 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "*",
-    "new-stroke": "",
+    "new-stroke": "*",
     "new-stroke-add": "",
-    "desc-en": "Find selected text in current page",
-    "desc-ja": "Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caretモードの場合、カーソル下にある単語をハイライトする。Visual - Rangeモードの場合、選択文字列をハイライトする。ただし、日本語の文章内ではうまく動作しない。ハイライトした単語は表示領域内最初のものにフォーカスがあるため、nキーの挙動に注意。"
+    "desc-en": "Search word under the cursor",
+    "desc-ja": "カーソル下にある単語でページ内検索する"
   },
   {
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "<Enter>",
-    "new-stroke": "",
+    "new-stroke": "<Enter>",
     "new-stroke-add": "",
     "desc-en": "Click on node under cursor.",
     "desc-ja": "カーソルのある要素をクリック"
@@ -1632,7 +1632,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "<Shift-Enter>",
-    "new-stroke": "",
+    "new-stroke": "<Shift-Enter>",
     "new-stroke-add": "",
     "desc-en": "Click on node under cursor.",
     "desc-ja": "カーソルのある要素をクリック（リンクの場合、新規タブで開く）"
@@ -1641,7 +1641,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "zt",
-    "new-stroke": "",
+    "new-stroke": "zt",
     "new-stroke-add": "",
     "desc-en": "make cursor at start of window.",
     "desc-ja": "カーソルが画面上端になるようにスクロール"
@@ -1650,7 +1650,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "zz",
-    "new-stroke": "",
+    "new-stroke": "zz",
     "new-stroke-add": "",
     "desc-en": "make cursor at center of window.",
     "desc-ja": "カーソルが画面中央になるようにスクロール"
@@ -1659,7 +1659,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "zb",
-    "new-stroke": "",
+    "new-stroke": "zb",
     "new-stroke-add": "",
     "desc-en": "make cursor at bottom of window.",
     "desc-ja": "カーソルが画面下端になるようにスクロール"
@@ -1668,25 +1668,25 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "f",
-    "new-stroke": "",
+    "new-stroke": "f",
     "new-stroke-add": "",
-    "desc-en": "Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints",
-    "desc-ja": "現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。"
+    "desc-en": "Forward to next char.",
+    "desc-ja": "1文字入力待ち状態になり、順方向にその文字を検索して見つかった場合にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "F",
-    "new-stroke": "",
+    "new-stroke": "F",
     "new-stroke-add": "",
-    "desc-en": "Go one tab history forward",
-    "desc-ja": "タブのアクティブ履歴を1つ進む"
+    "desc-en": "Backward to next char.",
+    "desc-ja": "1文字入力待ち状態になり、逆方向にその文字を検索して見つかった場合にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": ";",
-    "new-stroke": "",
+    "new-stroke": ";",
     "new-stroke-add": "",
     "desc-en": "Repeat latest f, F",
     "desc-ja": "直前の f または F をコマンドの方向に繰り返す"
@@ -1695,7 +1695,7 @@
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": ",",
-    "new-stroke": "",
+    "new-stroke": ",",
     "new-stroke-add": "",
     "desc-en": "Repeat latest f, F in opposite direction",
     "desc-ja": "直前の f または F をコマンドの逆方向に繰り返す"
@@ -1704,25 +1704,25 @@
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "p",
-    "new-stroke": "",
+    "new-stroke": "p",
     "new-stroke-add": "",
-    "desc-en": "Enter ephemeral PassThrough mode to temporarily suppress SurfingKeys",
-    "desc-ja": "パススルーモードに1秒間だけ移行。"
+    "desc-en": "Expand selection to parent element",
+    "desc-ja": "現在の選択範囲を親要素まで広げる"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "V",
-    "new-stroke": "",
+    "new-stroke": "V",
     "new-stroke-add": "",
-    "desc-en": "Restore visual mode",
-    "desc-ja": "ページ内でVisualモードを利用していた場合、状態を復元する"
+    "desc-en": "Select a word(w) or line(l) or sentence(s) or paragraph(p)",
+    "desc-ja": "続けて入力するキーに対応するテキストを選択する。単語(w)、行(l)、文(s)、段落(p)。"
   },
   {
     "category": "Visual Mode",
     "mode": "visual",
     "old-stroke": "<Ctrl-u>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-u>",
     "new-stroke-add": "",
     "desc-en": "Backward 20 lines",
     "desc-ja": "逆方向20行先にカーソルを移動"
@@ -1731,28 +1731,28 @@
     "category": "Visual Mode",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-d>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-d>",
     "new-stroke-add": "",
-    "desc-en": "Delete focused item from bookmark or history",
-    "desc-ja": "オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する"
+    "desc-en": "Forward 20 lines",
+    "desc-ja": "順方向20行先にカーソルを移動"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "t",
-    "new-stroke": "",
+    "new-stroke": "t",
     "new-stroke-add": "",
-    "desc-en": "Open a URL",
-    "desc-ja": "オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して新規タブで開いて移動する。選択せず文字列を入れて決定した場合は新規タブでGoogle検索。"
+    "desc-en": "Translate selected text with google",
+    "desc-ja": "選択したテキストをGoogle翻訳で開く"
   },
   {
     "category": "Visual Mode",
     "mode": "normal",
     "old-stroke": "q",
-    "new-stroke": "",
+    "new-stroke": "q",
     "new-stroke-add": "",
-    "desc-en": "Click on an Image or a button",
-    "desc-ja": "現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。"
+    "desc-en": "Translate word under cursor",
+    "desc-ja": "選択したテキストを読み上げて単語翻訳機能にかける"
   },
   {
     "category": "vim-like marks",
@@ -1778,8 +1778,8 @@
     "old-stroke": "<Ctrl-'>",
     "new-stroke": "M",
     "new-stroke-add": "",
-    "desc-en": "Toggle quotes in an input element",
-    "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
+    "desc-en": "Jump to vim-like mark in new tab.",
+    "desc-ja": "1文字入力待ち状態になり、次に入力した文字で記憶したマークを新しいタブで開く。"
   },
   {
     "category": "Settings",
@@ -1985,8 +1985,8 @@
     "old-stroke": "gr",
     "new-stroke": "@R",
     "new-stroke-add": "",
-    "desc-en": "Read selected text",
-    "desc-ja": "選択テキストを読み上げ開始"
+    "desc-en": "Read selected text or text from clipboard",
+    "desc-ja": "クリップボードまたは選択したテキストを読み上げる"
   },
   {
     "category": "Misc",
@@ -2046,7 +2046,7 @@
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Ctrl-e>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-e>",
     "new-stroke-add": "",
     "desc-en": "Move the cursor to the end of the line",
     "desc-ja": "カーソルを行末に移動"
@@ -2055,7 +2055,7 @@
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Ctrl-f>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-f>",
     "new-stroke-add": "",
     "desc-en": "Move the cursor to the beginning of the line",
     "desc-ja": "カーソルを文頭に移動"
@@ -2064,16 +2064,16 @@
     "category": "Insert Mode",
     "mode": "visual",
     "old-stroke": "<Ctrl-u>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-u>",
     "new-stroke-add": "",
-    "desc-en": "Backward 20 lines",
-    "desc-ja": "逆方向20行先にカーソルを移動"
+    "desc-en": "Delete all entered characters before the cursor",
+    "desc-ja": "カーソルより前にある入力した文字をすべて削除"
   },
   {
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Alt-b>",
-    "new-stroke": "",
+    "new-stroke": "<Alt-b>",
     "new-stroke-add": "",
     "desc-en": "Move the cursor Backward 1 word",
     "desc-ja": "カーソルを1単語前に移動"
@@ -2082,7 +2082,7 @@
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Alt-f>",
-    "new-stroke": "",
+    "new-stroke": "<Alt-f>",
     "new-stroke-add": "",
     "desc-en": "Move the cursor Forward 1 word",
     "desc-ja": "カーソルを1単語次に移動"
@@ -2091,7 +2091,7 @@
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Alt-w>",
-    "new-stroke": "",
+    "new-stroke": "<Alt-w>",
     "new-stroke-add": "",
     "desc-en": "Delete a word backwards",
     "desc-ja": "前の単語を削除"
@@ -2100,7 +2100,7 @@
     "category": "Insert Mode",
     "mode": "insert",
     "old-stroke": "<Alt-d>",
-    "new-stroke": "",
+    "new-stroke": "<Alt-d>",
     "new-stroke-add": "",
     "desc-en": "Delete a word forwards",
     "desc-ja": "次の単語を削除"
@@ -2109,37 +2109,37 @@
     "category": "Insert Mode",
     "mode": "omnibar",
     "old-stroke": "<Esc>",
-    "new-stroke": "",
+    "new-stroke": "<Esc>",
     "new-stroke-add": "",
-    "desc-en": "Close Omnibar",
-    "desc-ja": "オムニバーを閉じる"
+    "desc-en": "Exit insert mode",
+    "desc-ja": "Insertモードを抜ける"
   },
   {
     "category": "Insert Mode",
     "mode": "omnibar",
     "old-stroke": "<Ctrl-'>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-'>",
     "new-stroke-add": "",
     "desc-en": "Toggle quotes in an input element",
-    "desc-ja": "オムニバーの入力欄テキストをダブルクォートで囲む・解除する"
+    "desc-ja": "入力欄テキストをダブルクォートで囲む・解除する"
   },
   {
     "category": "Insert Mode",
     "mode": "normal",
     "old-stroke": "<Ctrl-i>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-i>",
     "new-stroke-add": "",
-    "desc-en": "Go to edit box with vim editor",
-    "desc-ja": "`I`と同じ"
+    "desc-en": "Open vim editor for current input",
+    "desc-ja": "現在の入力欄をVimエディタで開く"
   },
   {
     "category": "Insert Mode",
     "mode": "normal",
     "old-stroke": "<Ctrl-Alt-i>",
-    "new-stroke": "",
+    "new-stroke": "<Ctrl-Alt-i>",
     "new-stroke-add": "",
-    "desc-en": "Go to edit box with neo vim editor",
-    "desc-ja": "`I`と同じ（Neovimエディタ）"
+    "desc-en": "Open neovim for current input",
+    "desc-ja": "現在の入力欄をNeovimで開く"
   },
   {
     "category": "Secret",

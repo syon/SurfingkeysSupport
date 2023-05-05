@@ -17,8 +17,8 @@ Mouse Click	normal	;fs	cf		Display hints to focus scrollable elements	現在表�
 Mouse Click	normal	;di	;di		Download image	現在表示中の領域にある画像をファイルとしてダウンロードする。複数ある場合はヒント選択。
 Mouse Click	normal	O	;u		Open detected links from text	現在表示中の領域にあるURLテキストを開く。複数ある場合はヒント選択。
 Mouse Click	normal	f	f		Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
-Mouse Click	normal	af			Open a link in active new tab	`f`をアクティブな新しいタブで開く状態で実行。
-Mouse Click	normal	C	F		Open a link in non-active new tab	`f`を非アクティブな新しいタブで開く状態で実行。
+Mouse Click	normal	af	F		Open a link in active new tab	`f`をアクティブな新しいタブで開く状態で実行。
+Mouse Click	normal	C			Open a link in non-active new tab	`f`を非アクティブな新しいタブで開く状態で実行。
 Mouse Click	normal	<Ctrl-h>	;mov		Mouse over elements.	現在表示中の領域にある要素に対して mouseover イベントを実行。複数ある場合はヒント選択。
 Mouse Click	normal	<Ctrl-j>	;mou		Mouse out elements.	現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。
 Mouse Click	normal	i	i		Go to edit box	現在表示中の領域にある入力要素をクリック。複数ある場合はヒント選択。
@@ -31,9 +31,9 @@ Scroll Page / Element	normal	0	0		Scroll all the way to the left	ページ左端
 Scroll Page / Element	normal	cS	cc		Reset scroll target	スクロール対象のフォーカスをリセット
 Scroll Page / Element	normal	cs	c;		Change scroll target	ページ内のスクロール対象を順に切り替えてフォーカスを移す。
 Scroll Page / Element	normal	e	e		Scroll half page up	半ページ分上にスクロール
-Scroll Page / Element	normal	U	U		Scroll full page up	１ページ分上にスクロール
+Scroll Page / Element	normal	U			Scroll full page up	１ページ分上にスクロール
 Scroll Page / Element	normal	d	d		Scroll half page down	半ページ分下にスクロール
-Scroll Page / Element	normal	P	P		Scroll full page down	１ページ分下にスクロール
+Scroll Page / Element	normal	P			Scroll full page down	１ページ分下にスクロール
 Scroll Page / Element	normal	gg	gg		Scroll to the top of the page	ページ上端にスクロール
 Scroll Page / Element	normal	G	G		Scroll to the bottom of the page	ページ下端にスクロール
 Scroll Page / Element	normal	j	j	s	Scroll down	少し下にスクロール。移動幅は settings.scrollStepSize で指定。
@@ -42,7 +42,7 @@ Scroll Page / Element	normal	h	h		Scroll left	少し左にスクロール。移�
 Scroll Page / Element	normal	l	l		Scroll right	少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
 Scroll Page / Element	normal	$	$		Scroll all the way to the right	ページ右端にスクロール
 Scroll Page / Element	normal	%	%		Scroll to percentage of current page	数値を入力してから押すことで、指定されたパーセンテージの位置にスクロール
-Scroll Page / Element	normal	;w			Focus top window	
+Scroll Page / Element	normal	;w			Focus top window	ウィンドウ階層の最上位にフォーカスを移す。フレームが使われているページで利用。
 Scroll Page / Element	normal	w	cw;		Switch frames	操作対象のフレームを順に切り替えてフォーカスを移す。
 Scroll Page / Element	normal	u	u		Scroll half page up	半ページ分上にスクロール
 						
@@ -74,8 +74,8 @@ Tabs	normal	<<	<<		Move current tab to left	現在のタブを左に移動する
 Tabs	normal	>>	>>		Move current tab to right	現在のタブを右に移動する
 						
 Page Navigation	normal	gu	gu		Go up one path in the URL	URLの1つ上のディレクトリにアクセスする
-Page Navigation	normal	gT			Go to first activated tab	
-Page Navigation	normal	gt			Go to last activated tab	
+Page Navigation	normal	gT			Go to first activated tab	タブのアクティブ履歴の最初に行く
+Page Navigation	normal	gt			Go to last activated tab	タブのアクティブ履歴の最後に行く
 Page Navigation	normal	gp	tgp		Go to the playing tab	音声再生中のタブをアクティブにする。複数ある場合は最後にアクティブにしたものが対象。
 Page Navigation	normal	g?	g?		Reload current page without query string(all parts after question mark)	URLのクエリストリングを除去してリロード
 Page Navigation	normal	g#	g#		Reload current page without hash fragment	URLのハッシュフラグメントを除去してリロード
@@ -146,68 +146,68 @@ Omnibar	normal	H	oH		Open opened URL in current tab	オムニバーを表示し�
 Omnibar	normal	:	:		Open commands	オムニバーを表示し、コマンドを実行する
 Omnibar	normal	t	a		Open a URL	オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して新規タブで開いて移動する。選択せず文字列を入れて決定した場合は新規タブでGoogle検索。
 Omnibar	normal	b	b		Open a bookmark	オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く
-Omnibar	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する
-Omnibar	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
-Omnibar	normal	<Ctrl-j>			Mouse out elements.	現在表示中の領域にある要素に対して mouseout イベントを実行。複数ある場合はヒント選択。
-Omnibar	omnibar	<Ctrl-.>			Show results of next page	オムニバーの結果リストを次のページに切り替える
-Omnibar	omnibar	<Ctrl-,>			Show results of previous page	オムニバーの結果リストを前のページに切り替える
-Omnibar	omnibar	<Ctrl-c>			Copy selected item url or all listed item urls	オムニバーで選択中の項目のURLをクリップボードにコピーする。選択なしの場合は結果リストのURLをすべてコピーする。
-Omnibar	omnibar	<Ctrl-D>			Delete all listed items from bookmark or history	オムニバーで表示しているブックマークまたは履歴をすべて削除する
-Omnibar	omnibar	<Ctrl-r>			Re-sort history by visitCount or lastVisitTime	オムニバーで履歴を表示するとき、並び順を訪問回数もしくは最終訪問日時で切り替える
-Omnibar	omnibar	<Esc>			Close Omnibar	オムニバーを閉じる
-Omnibar	omnibar	<Ctrl-m>			Create vim-like mark for selected item	オムニバーで選択中の項目をマークする
-Omnibar	omnibar	<Tab>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
-Omnibar	omnibar	<Shift-Tab>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
-Omnibar	omnibar	<Ctrl-'>			Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
-Omnibar	omnibar	<ArrowDown>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
-Omnibar	omnibar	<ArrowUp>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
-Omnibar	omnibar	<Ctrl-n>			Forward cycle through the candidates.	オムニバーの候補リストで次を選択
-Omnibar	omnibar	<Ctrl-p>			Backward cycle through the candidates.	オムニバーの候補リストで前を選択
+Omnibar	omnibar	<Ctrl-d>	<Ctrl-d>		Delete focused item from bookmark or history	オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する
+Omnibar	normal	<Ctrl-i>	<Ctrl-i>		Edit selected URL with vim editor, then open	オムニバーで選択中のURLをVimエディタで編集してアクティブな新しいタブで開く
+Omnibar	normal	<Ctrl-j>	<Ctrl-j>		Toggle Omnibar's position	オムニバーの表示位置をページ上部・下部で切り替える
+Omnibar	omnibar	<Ctrl-.>	<Ctrl-.>		Show results of next page	オムニバーの結果リストを次のページに切り替える
+Omnibar	omnibar	<Ctrl-,>	<Ctrl-,>		Show results of previous page	オムニバーの結果リストを前のページに切り替える
+Omnibar	omnibar	<Ctrl-c>	<Ctrl-c>		Copy selected item url or all listed item urls	オムニバーで選択中の項目のURLをクリップボードにコピーする。選択なしの場合は結果リストのURLをすべてコピーする。
+Omnibar	omnibar	<Ctrl-D>	<Ctrl-D>		Delete all listed items from bookmark or history	オムニバーで表示しているブックマークまたは履歴をすべて削除する
+Omnibar	omnibar	<Ctrl-r>	<Ctrl-r>		Re-sort history by visitCount or lastVisitTime	オムニバーで履歴を表示するとき、並び順を訪問回数もしくは最終訪問日時で切り替える
+Omnibar	omnibar	<Esc>	<Esc>		Close Omnibar	オムニバーを閉じる
+Omnibar	omnibar	<Ctrl-m>	<Ctrl-m>		Create vim-like mark for selected item	オムニバーで選択中の項目をマークする
+Omnibar	omnibar	<Tab>	<Tab>		Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<Shift-Tab>	<Shift-Tab>		Backward cycle through the candidates.	オムニバーの候補リストで前を選択
+Omnibar	omnibar	<Ctrl-'>	<Ctrl-'>		Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
+Omnibar	omnibar	<ArrowDown>	<ArrowDown>		Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<ArrowUp>	<ArrowUp>		Backward cycle through the candidates.	オムニバーの候補リストで前を選択
+Omnibar	omnibar	<Ctrl-n>	<Ctrl-n>		Forward cycle through the candidates.	オムニバーの候補リストで次を選択
+Omnibar	omnibar	<Ctrl-p>	<Ctrl-p>		Backward cycle through the candidates.	オムニバーの候補リストで前を選択
 						
 Visual Mode	normal	/	/		Find in current page	画面右下に検索窓を表示してページ内検索を開始
 Visual Mode	normal	zv	zv		Enter visual mode, and select whole element	テキスト要素にヒントを表示し、選択後にVisualモードに入り対象の要素全体を選択状態にする
 Visual Mode	normal	V	V		Restore visual mode	ページ内でVisualモードを利用していた場合、状態を復元する
 Visual Mode	normal	*	*		Find selected text in current page	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caretモードの場合、カーソル下にある単語をハイライトする。Visual - Rangeモードの場合、選択文字列をハイライトする。ただし、日本語の文章内ではうまく動作しない。ハイライトした単語は表示領域内最初のものにフォーカスがあるため、nキーの挙動に注意。
 Visual Mode	normal	v	v		Toggle visual mode	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caret モードの場合、Visual - Rangeモードに入る。Escキーで直前のモードに戻る。
-Visual Mode	normal	n			Next found text	次の候補に移動
-Visual Mode	normal	N			Previous found text	前の候補に移動
-Visual Mode	normal	0			Scroll all the way to the left	ページ左端にスクロール
-Visual Mode	normal	l			Scroll right	少し右にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
-Visual Mode	normal	h			Scroll left	少し左にスクロール。移動幅は settings.scrollStepSize で指定されたものの半分。
-Visual Mode	normal	j			Scroll down	少し下にスクロール。移動幅は settings.scrollStepSize で指定。
-Visual Mode	normal	k			Scroll up	少し上にスクロール。移動幅は settings.scrollStepSize で指定。
-Visual Mode	normal	w			Switch frames	操作対象のフレームを順に切り替えてフォーカスを移す。
-Visual Mode	normal	e			Scroll half page up	半ページ分上にスクロール
-Visual Mode	normal	b			Open a bookmark	オムニバーを表示し、ブックマークの中から選択してアクティブな新規タブで開く
-Visual Mode	visual	)			forward sentence	次の文にカーソルを移動
-Visual Mode	visual	(			backward sentence	前の文にカーソルを移動
-Visual Mode	visual	}			forward paragraphboundary	次の段落境界にカーソルを移動
-Visual Mode	visual	{			backward paragraphboundary	前の段落境界にカーソルを移動
-Visual Mode	normal	$			Scroll all the way to the right	ページ右端にスクロール
-Visual Mode	normal	G			Scroll to the bottom of the page	ページ下端にスクロール
-Visual Mode	normal	gg			Scroll to the top of the page	ページ上端にスクロール
-Visual Mode	visual	gr			Read selected text	選択テキストを読み上げ開始
-Visual Mode	visual	o			Go to Other end of highlighted text	選択範囲のカーソル位置を、始端もしくは終端で切り替える
-Visual Mode	normal	*			Find selected text in current page	Normalモードの場合、テキスト要素にヒントを表示し、選択後にVisual - Caretモードに入る。Visual - Caretモードの場合、カーソル下にある単語をハイライトする。Visual - Rangeモードの場合、選択文字列をハイライトする。ただし、日本語の文章内ではうまく動作しない。ハイライトした単語は表示領域内最初のものにフォーカスがあるため、nキーの挙動に注意。
-Visual Mode	visual	<Enter>			Click on node under cursor.	カーソルのある要素をクリック
-Visual Mode	visual	<Shift-Enter>			Click on node under cursor.	カーソルのある要素をクリック（リンクの場合、新規タブで開く）
-Visual Mode	visual	zt			make cursor at start of window.	カーソルが画面上端になるようにスクロール
-Visual Mode	visual	zz			make cursor at center of window.	カーソルが画面中央になるようにスクロール
-Visual Mode	visual	zb			make cursor at bottom of window.	カーソルが画面下端になるようにスクロール
-Visual Mode	normal	f			Open a link, press SHIFT to flip overlapped hints, hold SPACE to hide hints	現在表示中の領域にあるクリック要素を開く。複数ある場合はヒント選択。ヒント表示中にShiftキーを押すと、重なっているヒントが入れ替わる。Spaceキーを押している間、一時的にヒントを非表示にできる。
-Visual Mode	normal	F			Go one tab history forward	タブのアクティブ履歴を1つ進む
-Visual Mode	visual	;			Repeat latest f, F	直前の f または F をコマンドの方向に繰り返す
-Visual Mode	visual	,			Repeat latest f, F in opposite direction	直前の f または F をコマンドの逆方向に繰り返す
-Visual Mode	normal	p			Enter ephemeral PassThrough mode to temporarily suppress SurfingKeys	パススルーモードに1秒間だけ移行。
-Visual Mode	normal	V			Restore visual mode	ページ内でVisualモードを利用していた場合、状態を復元する
-Visual Mode	visual	<Ctrl-u>			Backward 20 lines	逆方向20行先にカーソルを移動
-Visual Mode	omnibar	<Ctrl-d>			Delete focused item from bookmark or history	オムニバーで表示しているブックマークまたは履歴で選択中の項目を削除する
-Visual Mode	normal	t			Open a URL	オムニバーを表示し、現在開いているタブとブックマーク、履歴の中から選択して新規タブで開いて移動する。選択せず文字列を入れて決定した場合は新規タブでGoogle検索。
-Visual Mode	normal	q			Click on an Image or a button	現在表示中の領域にある画像またはボタン要素をクリック。複数ある場合はヒント選択。
+Visual Mode	normal	n	n		Next found text	次の候補に移動
+Visual Mode	normal	N	N		Previous found text	前の候補に移動
+Visual Mode	normal	0	0		backward lineboundary	前の行境界にカーソルを移動
+Visual Mode	normal	l	l		forward character	次の文字にカーソルを移動
+Visual Mode	normal	h	h		backward character	前の文字にカーソルを移動
+Visual Mode	normal	j	j		forward line	次の行にカーソルを移動
+Visual Mode	normal	k	k		backward line	前の行にカーソルを移動
+Visual Mode	normal	w	w		forward word	次の単語にカーソルを移動
+Visual Mode	normal	e	e		forward word	次の単語にカーソルを移動
+Visual Mode	normal	b	b		backward word	前の単語にカーソルを移動
+Visual Mode	visual	)	)		forward sentence	次の文にカーソルを移動
+Visual Mode	visual	(	(		backward sentence	前の文にカーソルを移動
+Visual Mode	visual	}	}		forward paragraphboundary	次の段落境界にカーソルを移動
+Visual Mode	visual	{	{		backward paragraphboundary	前の段落境界にカーソルを移動
+Visual Mode	normal	$	$		forward lineboundary	次の行境界にカーソルを移動
+Visual Mode	normal	G	G		forward documentboundary	ドキュメントの末尾にカーソルを移動
+Visual Mode	normal	gg	gg		backward documentboundary	ドキュメントの先頭にカーソルを移動
+Visual Mode	visual	gr	gr		Read selected text	選択テキストを読み上げ開始
+Visual Mode	visual	o	o		Go to Other end of highlighted text	選択範囲のカーソル位置を、始端もしくは終端で切り替える
+Visual Mode	normal	*	*		Search word under the cursor	カーソル下にある単語でページ内検索する
+Visual Mode	visual	<Enter>	<Enter>		Click on node under cursor.	カーソルのある要素をクリック
+Visual Mode	visual	<Shift-Enter>	<Shift-Enter>		Click on node under cursor.	カーソルのある要素をクリック（リンクの場合、新規タブで開く）
+Visual Mode	visual	zt	zt		make cursor at start of window.	カーソルが画面上端になるようにスクロール
+Visual Mode	visual	zz	zz		make cursor at center of window.	カーソルが画面中央になるようにスクロール
+Visual Mode	visual	zb	zb		make cursor at bottom of window.	カーソルが画面下端になるようにスクロール
+Visual Mode	normal	f	f		Forward to next char.	1文字入力待ち状態になり、順方向にその文字を検索して見つかった場合にカーソルを移動
+Visual Mode	normal	F	F		Backward to next char.	1文字入力待ち状態になり、逆方向にその文字を検索して見つかった場合にカーソルを移動
+Visual Mode	visual	;	;		Repeat latest f, F	直前の f または F をコマンドの方向に繰り返す
+Visual Mode	visual	,	,		Repeat latest f, F in opposite direction	直前の f または F をコマンドの逆方向に繰り返す
+Visual Mode	normal	p	p		Expand selection to parent element	現在の選択範囲を親要素まで広げる
+Visual Mode	normal	V	V		Select a word(w) or line(l) or sentence(s) or paragraph(p)	続けて入力するキーに対応するテキストを選択する。単語(w)、行(l)、文(s)、段落(p)。
+Visual Mode	visual	<Ctrl-u>	<Ctrl-u>		Backward 20 lines	逆方向20行先にカーソルを移動
+Visual Mode	omnibar	<Ctrl-d>	<Ctrl-d>		Forward 20 lines	順方向20行先にカーソルを移動
+Visual Mode	normal	t	t		Translate selected text with google	選択したテキストをGoogle翻訳で開く
+Visual Mode	normal	q	q		Translate word under cursor	選択したテキストを読み上げて単語翻訳機能にかける
 						
 vim-like marks	normal	m	@mk		Add current URL to vim-like marks	1文字入力待ち状態になり、次に入力した文字でマークを現在のページとスクロール状態に付与する。記憶したマークの一覧は om コマンドで確認できる。
 vim-like marks	normal	'	m		Jump to vim-like mark	1文字入力待ち状態になり、次に入力した文字で記憶したマークを新しいタブで開く。
-vim-like marks	omnibar	<Ctrl-'>	M		Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
+vim-like marks	omnibar	<Ctrl-'>	M		Jump to vim-like mark in new tab.	1文字入力待ち状態になり、次に入力した文字で記憶したマークを新しいタブで開く。
 						
 Settings	normal	;pm	@md		Preview markdown	Markdownプレビュータブを開き、クリップボードの文字列をMarkdownとして表示する。
 Settings	normal	;e	@e		Edit Settings	Surfingkeysの設定を開く
@@ -234,7 +234,7 @@ Proxy	normal	;pc			set proxy mode `clear`	プロキシモード clear
 Proxy	normal	;cp			Copy proxy info	プロキシ設定情報をクリップボードにコピーする
 Proxy	normal	;ap			Apply proxy info from clipboard	プロキシ設定情報をクリップボードから反映する
 						
-Misc	visual	gr	@R		Read selected text	選択テキストを読み上げ開始
+Misc	visual	gr	@R		Read selected text or text from clipboard	クリップボードまたは選択したテキストを読み上げる
 Misc	normal	;s	@pdf		Toggle PDF viewer from SurfingKeys	PDFビューアの有効無効を切り替える。通常、Chromeで開いたPDFファイルは専用のビューアが利用され、Surfingkeysが動作しない。
 Misc	normal	;ph	@ph		Put histories from clipboard	クリップボードからURLを履歴に追加する（改行区切りで複数可）
 Misc	normal	;t	@t		Translate selected text with google	選択したテキストをGoogle翻訳で開く
@@ -242,16 +242,16 @@ Misc	normal	;dh			Delete history older than 30 days	30日以上前の履歴を�
 Misc	normal	;db			Remove bookmark for current page	現在のページをブックマークから削除する
 Misc	normal	;yh	@yh		Yank histories	履歴をクリップボードにコピーする（最大100件）
 						
-Insert Mode	insert	<Ctrl-e>			Move the cursor to the end of the line	カーソルを行末に移動
-Insert Mode	insert	<Ctrl-f>			Move the cursor to the beginning of the line	カーソルを文頭に移動
-Insert Mode	visual	<Ctrl-u>			Backward 20 lines	逆方向20行先にカーソルを移動
-Insert Mode	insert	<Alt-b>			Move the cursor Backward 1 word	カーソルを1単語前に移動
-Insert Mode	insert	<Alt-f>			Move the cursor Forward 1 word	カーソルを1単語次に移動
-Insert Mode	insert	<Alt-w>			Delete a word backwards	前の単語を削除
-Insert Mode	insert	<Alt-d>			Delete a word forwards	次の単語を削除
-Insert Mode	omnibar	<Esc>			Close Omnibar	オムニバーを閉じる
-Insert Mode	omnibar	<Ctrl-'>			Toggle quotes in an input element	オムニバーの入力欄テキストをダブルクォートで囲む・解除する
-Insert Mode	normal	<Ctrl-i>			Go to edit box with vim editor	`I`と同じ
-Insert Mode	normal	<Ctrl-Alt-i>			Go to edit box with neo vim editor	`I`と同じ（Neovimエディタ）
+Insert Mode	insert	<Ctrl-e>	<Ctrl-e>		Move the cursor to the end of the line	カーソルを行末に移動
+Insert Mode	insert	<Ctrl-f>	<Ctrl-f>		Move the cursor to the beginning of the line	カーソルを文頭に移動
+Insert Mode	visual	<Ctrl-u>	<Ctrl-u>		Delete all entered characters before the cursor	カーソルより前にある入力した文字をすべて削除
+Insert Mode	insert	<Alt-b>	<Alt-b>		Move the cursor Backward 1 word	カーソルを1単語前に移動
+Insert Mode	insert	<Alt-f>	<Alt-f>		Move the cursor Forward 1 word	カーソルを1単語次に移動
+Insert Mode	insert	<Alt-w>	<Alt-w>		Delete a word backwards	前の単語を削除
+Insert Mode	insert	<Alt-d>	<Alt-d>		Delete a word forwards	次の単語を削除
+Insert Mode	omnibar	<Esc>	<Esc>		Exit insert mode	Insertモードを抜ける
+Insert Mode	omnibar	<Ctrl-'>	<Ctrl-'>		Toggle quotes in an input element	入力欄テキストをダブルクォートで囲む・解除する
+Insert Mode	normal	<Ctrl-i>	<Ctrl-i>		Open vim editor for current input	現在の入力欄をVimエディタで開く
+Insert Mode	normal	<Ctrl-Alt-i>	<Ctrl-Alt-i>		Open neovim for current input	現在の入力欄をNeovimで開く
 						
 Secret	normal	ZQ				:quit コマンドを実行してChromeを終了する
