@@ -44,12 +44,18 @@
           <code class="keystroke">{{ item.stroke2 }}</code>
         </span>
       </template>
+      <template #item.desc="{ item }">
+        <span v-html="item.desc" />
+      </template>
     </v-data-table>
   </v-container>
 </template>
 
 <script>
+import MarkdownIt from 'markdown-it'
 import keymap from '@/data/out/keymap.json'
+
+const md = new MarkdownIt()
 
 const gistUrl =
   'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/4da0ae8ec6faed0c0b23dd3b580491e54f9d17cb/SurfingkeysConfig.js'
@@ -85,7 +91,7 @@ export default {
         mode: x.mode,
         stroke: this.isCustom ? x['new-stroke'] : x['old-stroke'],
         stroke2: x['new-stroke-add'],
-        desc: this.isTrans ? x['desc-ja'] : x['desc-en'],
+        desc: this.isTrans ? md.renderInline(x['desc-ja']) : x['desc-en'],
       }))
     },
     headers() {
