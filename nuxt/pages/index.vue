@@ -61,7 +61,7 @@ import keymap from '@/data/out/keymap.json'
 const md = new MarkdownIt()
 
 const gistUrl =
-  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/4e63028ecd1701b01847de91c94bd420993217a7/SurfingkeysConfig.js'
+  'https://gist.githubusercontent.com/syon/3baa7ae49220c26d1753c77fe531501c/raw/4530cafa3ff38f27b262274c1a79da3b699fadfc/SurfingkeysConfig.js'
 
 export default {
   data: () => ({
